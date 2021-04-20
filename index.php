@@ -1,3 +1,5 @@
+
 <?php
- echo 'hi';
+ echo 'hi <br>';
+ echo 'ok';
 ?>
