@@ -20,7 +20,7 @@ body {
 
 .img2{
   background-image: url("imgs/img-welcome11.jpg");
-  min-height: 100%;
+  min-height: 60%;
 }
 
 .img3{
@@ -28,13 +28,38 @@ body {
   min-height: 100%;
 }
 
+/* start neon text */
+.neon {
+  color: #fff;
+  text-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,            /* TOO LAGGY */
+    0 0 20px #fff,
+    0 0 40px #0ff,       /* REMOVED NEON WELCOME TEXT*/
+    0 0 80px #0ff,
+    0 0 90px #0ff,           /* !! CHECK LATER !! */
+    0 0 100px #0ff,          
+    0 0 150px #0ff;
+}                              
+
+/* end neon text */
 
 
+/* START STEPS CSS */
+.stepscss {
+    border:solid black 2px;
+    background-color:  rgba(255, 255, 255, 0.7);
+    position:relative; 
+    width:250px;
+    height:20%; 
+    display: inline-block;  
+    margin-left: 12%;
+    margin-top:10%;
+    text-align: center;
 
+}
 
-
-
-
+/* END OF STEPS CSS */
 
 
 
