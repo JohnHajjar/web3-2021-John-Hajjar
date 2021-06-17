@@ -35,39 +35,36 @@
 
 <div class="img2">
     <div class="stepscss">
-        
+        <a href="/web3x/signup.php" >
             <h1>
-                STEP 1 : 
+                STEP 1 
             </h1>
-            <p>
+            <h3>
                 Sing up.
-            </p>
-        
+            </h3>
+        </a>
     </div>
-    
-    
     <div class="stepscss">
-        
+        <a href="/web3x/shopmainpage.php" >
             <h1>
-                STEP 2 : 
+                STEP 2 
             </h1>
             <h3>
                 Pick your favorite items.
             </h3>
-       
+        </a>
     </div>
-
-
     <div class="stepscss">
-        
-        <h1>
-            STEP 3 : 
-        </h1>
-        <h2>
-            Place your order. 
-        </h2>
-   
-</div>
+        <a href="/web3x/checkchart.php" >
+            <h1>
+                STEP 3 
+            </h1>
+            <h3>
+                Place your order. 
+            </h3>
+        </a> 
+    </div>
+    
 
 </div>
 
@@ -78,8 +75,18 @@
 </div>
 
 <div class="img3">
-        <p>ccccccccc</p>
+    <div>
+        <h1>
+            TO BE ADDED 
+            <br>
+            SLIDE SHOW 
+            <br>
+            OF TOP ITEMS
+            <br> WAITING FOR DB TO BE BUILT.
+        </h1>
+    </div>
 </div>
+
 
 </body>
 </html>

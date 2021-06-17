@@ -47,21 +47,34 @@ body {
 
 /* START STEPS CSS */
 .stepscss {
-    border:solid black 2px;
+  font-family: "Lucida Console", Monaco, monospace;
+    border:solid black 1px;
     background-color:  rgba(255, 255, 255, 0.7);
     position:relative; 
-    width:250px;
+    width: 250px;
+    height: 150px; 
+    display: inline-block;
+    margin-top:10%;  
+    margin-left: 150px;
+    text-align: center;
+}
+
+/*
+width:20%;
     height:20%; 
     display: inline-block;  
-    margin-left: 12%;
+    margin-left: 10%;
     margin-top:10%;
     text-align: center;
-
-}
+ */
 
 /* END OF STEPS CSS */
 
+a {
+  text-decoration: none; 
+  color: #000000;
 
+}
 
 
 
