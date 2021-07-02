@@ -6,14 +6,20 @@
 
 
 <div class="img1">
-    <div>
-        <img style="float:right;" src="imgs/opengif.gif" widht=50% height=50%>   
+    <div style="float:right;">
+    <blockquote class="sidekick" >
+     - Life is too short <br> 
+      to wear boring jewelry </blockquote>
+
+    <!--<img style="padding:100px;" src="imgs/quote1.jpeg" widht=50% height=50%>-->
+
     </div>
+
 </div>
 
-<div style="color: #777;background-color:white; text-align:center; padding:20px 50px; text-align: justify;">
-    <h3 style="text-align:center; font-size:20px;">WELCOME TO JEWXRLY</h3>
-    <p style="text-align:center;">
+<div class="text1" >
+    <h3 style="text-align:center; font-size:23px;">WELCOME TO JEWXRLY</h3>
+    <p style="text-align:center; font-size:19px;">
         Jewxrly is an online store that specializes in a range of minimalistic, fashion-forward, <br>
         and expensive-looking jewerly with an affordable price for both men, women and couples.
     </p>
@@ -34,43 +40,25 @@
 </div>
 
 <div class="img2">
-    <div class="stepscss">
-        <a href="/web3x/signup.php" >
-            <h1>
-                STEP 1 
-            </h1>
-            <h3>
-                Sing up.
-            </h3>
-        </a>
+   
+    <h3 class="sidekick3" align=center>
+        Start the best journey of your life <br>
+        having the best style with us.
+    </h3>
+
+    <div class="text2"> 
+            <button class="btn">
+                <span class="btn-text">Join us now !</span>
+            </button>
     </div>
-    <div class="stepscss">
-        <a href="/web3x/shopmainpage.php" >
-            <h1>
-                STEP 2 
-            </h1>
-            <h3>
-                Pick your favorite items.
-            </h3>
-        </a>
-    </div>
-    <div class="stepscss">
-        <a href="/web3x/checkchart.php" >
-            <h1>
-                STEP 3 
-            </h1>
-            <h3>
-                Place your order. 
-            </h3>
-        </a> 
-    </div>
-    
 
 </div>
 
-<div style="color: #777;background-color:black; text-align:center; padding:20px 50px; text-align: justify;">
+<div class="text3">
     <p style="text-align:center; color:white; font-size:20px;">
-        Three easy steps to obtain your favorite jewerly delivired right to your doorstep with the best prices.
+        We are here to help and offer you the chance of your life to
+        stop wearing boring jewelry and finally stand out from other people. 
+
     </p>
 </div>
 

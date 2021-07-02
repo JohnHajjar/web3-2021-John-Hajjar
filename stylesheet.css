@@ -15,7 +15,7 @@ body {
 
 .img1{
   background-image: url("imgs/img-welcome22.jpg");
-  min-height: 100%;
+  min-height: 90%;
 }
 
 .img2{
@@ -44,31 +44,91 @@ body {
 
 /* end neon text */
 
-
-/* START STEPS CSS */
-.stepscss {
-  font-family: "Lucida Console", Monaco, monospace;
-    border:solid black 1px;
-    background-color:  rgba(255, 255, 255, 0.7);
-    position:relative; 
-    width: 250px;
-    height: 150px; 
-    display: inline-block;
-    margin-top:10%;  
-    margin-left: 150px;
-    text-align: center;
+.text1 {
+  color: #777;
+  background-color:white; 
+  text-align:center;
+  text-align: justify;
 }
 
-/*
-width:20%;
-    height:20%; 
-    display: inline-block;  
-    margin-left: 10%;
-    margin-top:10%;
-    text-align: center;
- */
+.text2 {
+  position: relative;
+  top:200px;
+  right:85px;
+}
 
-/* END OF STEPS CSS */
+.text3 {
+  color: #777;
+  background-color:black;
+  text-align:center; 
+  padding:20px 50px; 
+  text-align: justify;
+}
+
+.sidekick {
+  position: relative;
+  top:350px;
+  right:100px;
+  padding-left: 1em;
+  border-left: 0.2em solid white; 
+  border-right: 0.2em solid white;              /*quote in mainpage */
+  padding-right: 1em;
+  font-family: 'Courier New', monospace; 
+  color:WHITE;
+  font-size: 2.4em;
+  line-height: 1.5em;
+  font-weight: 100;
+}
+
+
+
+.sidekick3 {
+  position: relative;
+  top:90px;
+  left:400px;
+  font-family: Georgia, serif;
+  font-size: 27px;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  font-style: italic;
+  font-variant: small-caps;
+  text-transform: lowercase;
+  float:left; background-color:white
+}
+
+/*   Sign up now ! */
+
+.btn {
+  margin: 20px auto;
+  border: none;
+  padding: 10px 44px;
+  font-size: 36px;
+  position: relative;
+}
+.btn::before {
+  transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  content: "";
+  width: 50%;
+  height: 100%;
+  background: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.btn .btn-text {
+  color: white;
+  mix-blend-mode: difference;
+}
+.btn:hover::before {
+  background: black;
+  width: 100%;
+}
+
+
+	
+
+/* finish sign up now ! */
+
 
 a {
   text-decoration: none; 
