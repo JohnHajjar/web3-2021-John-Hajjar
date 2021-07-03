@@ -6,7 +6,7 @@
 
 
 <div class="img1">
-    <img src="imgs/jxlogo.png" width=7% height=15%>
+    <img src="imgs/jxlogo.png" style="position: fixed;" width=7% height=15%>
     <div style="float:right;">
     <blockquote class="sidekick" >
      - Life is too short <br> 
