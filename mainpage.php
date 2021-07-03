@@ -6,6 +6,7 @@
 
 
 <div class="img1">
+    <img src="imgs/jxlogo.png" width=7% height=15%>
     <div style="float:right;">
     <blockquote class="sidekick" >
      - Life is too short <br> 
@@ -40,14 +41,13 @@
 </div>
 
 <div class="img2">
-   
     <h3 class="sidekick3" align=center>
         Start the best journey of your life <br>
         having the best style with us.
     </h3>
 
     <div class="text2"> 
-            <button class="btn">
+            <button class="btn" onclick="window.location='signup.php'">
                 <span class="btn-text">Join us now !</span>
             </button>
     </div>

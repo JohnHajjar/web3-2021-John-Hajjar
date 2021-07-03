@@ -53,7 +53,7 @@ body {
 
 .text2 {
   position: relative;
-  top:200px;
+  top:200px; /*top:200px; right:7%; for higher res*/
   right:85px;
 }
 
@@ -84,8 +84,8 @@ body {
 
 .sidekick3 {
   position: relative;
-  top:90px;
-  left:400px;
+  top:90px; /*top:90px; left:28%; */
+  left:380px;
   font-family: Georgia, serif;
   font-size: 27px;
   letter-spacing: 2px;
@@ -108,7 +108,7 @@ body {
 .btn::before {
   transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   content: "";
-  width: 50%;
+  width: 55%;
   height: 100%;
   background: black;
   position: absolute;
@@ -127,7 +127,7 @@ body {
 
 	
 
-/* finish sign up now ! */
+/* finish mainpage now ! */
 
 
 a {
@@ -137,6 +137,60 @@ a {
 }
 
 
+
+
+/* START signup page */
+
+.pagesignupcss {
+  background-image:url(imgs/backgroundsignup.jpg);
+  background-repeat: no-repeat;
+  background-size: cover
+}
+
+
+.upbar {
+  display : flex;
+}
+
+.middlepage {
+  font-family: 'Courier New', monospace; 
+  margin:auto; 
+  width:60%; 
+  padding: 40px; 
+}
+
+.inputs{
+  border-radius: 35px;
+  margin-bottom: 10px; 
+  background : rgba(255, 255, 255, 0.15);
+  color:white;
+}
+ .tablesignup {
+  color:white; 
+  padding:30px;  
+  background-color: rgba(0, 0, 0, 0.61);
+ }
+
+ .tablesignup tr {
+   text-align: center;
+ }
+
+.submitformsignup {
+  background: #fc636b;
+    border: none;
+    color: #fff;
+    padding: 11px 15px;
+    text-transform: uppercase;
+    font-family: 'Mukta', sans-serif;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 10px;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+
+/* FINISH signup page */
 
 
 
