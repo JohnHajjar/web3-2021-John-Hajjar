@@ -194,7 +194,18 @@ a {
 
 
 
+/* START store page */
 
+.storepagecss {
+  background-image:url(imgs/3162421.jpg);
+ /* background-repeat: no-repeat;*/
+ background-size: contain;
+ 
+}
+
+
+
+/*  END store page */
 
 
 

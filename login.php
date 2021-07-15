@@ -6,9 +6,9 @@
 
 <body class="pagesignupcss">
 
-
+<!--
 <div class="upbar">
-    <a href="mainpage.php">
+    <a href="welcomepage.php">
         <img src="imgs/whitejxlogo.jpg" width="9%" height=50px style="margin: 10px;">
     </a>
 
@@ -25,8 +25,13 @@
     <div class="button" id="button-5">
         <div id="translate"></div>
         <a class="a-button" href="#">Policy</a>
-    </div>
-</div>
+    </div>  </div>
+
+
+-->
+
+
+<?php include 'upbar.php'; ?>
 
 <div class="middlepage">
     <form action="db.php" method="post">
