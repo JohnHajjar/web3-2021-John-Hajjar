@@ -6,7 +6,7 @@
 
 <body class="pagesignupcss">
 
-<!-- helo testt 123
+<!-- 123 testing baby welcome to my world bitches
 <div class="upbar">
     <a href="welcome.php">
         <img src="imgs/whitejxlogo.jpg" width="9%" height=50px style="margin: 10px;">
