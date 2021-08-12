@@ -11,11 +11,12 @@
 
 <div class="upbar">
     <a href="welcomepage.php"> 
-        <img src="imgs/whitejxlogo.jpg" width="9%" height=50px style="margin: 10px;">
+        <img src="imgs/whitejxlogo.jpg" width="55px" height=50px style="margin: 10px;">
     </a>
         
     <!-- testtttttttttttt  -->
     
+<div class="upbar2">
     <div class="button" id="button-5">
         <div id="translate"></div>
      
@@ -28,10 +29,6 @@
         <?php } ?>
     </div>
 
-
-
-
-    
     <div class="button" id="button-6">
         <div id="spin"></div>
         <a class="a-button" href="\..\web3x\index.php"> About Us </a>
@@ -43,6 +40,7 @@
     </div>
 </div>
 
+</div>>
 
 
 </body>
