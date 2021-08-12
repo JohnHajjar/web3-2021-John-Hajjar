@@ -42,7 +42,7 @@
 
 <div>
 &nbsp;&nbsp;&nbsp;
- <span class="txt123" style="color:white; font-size:18px;"> Men rings &nbsp;&nbsp;</span>
+ <span class="texts" style="color:white; font-size:18px;"> Men rings &nbsp;&nbsp;</span>
 <span class="expmore" style="color:cyan;"> > </span>
 </div>
 
@@ -57,17 +57,22 @@ hi
 
 
 $(document).ready(function(){
-  $(".txt123").mouseenter(function(){
-    $(".txt123").animate({'font-size':'25px'},"slow");
-    
-    $(".expmore").html("Explore more >");
+  $(".texts").mouseenter(function(){
+    $('.expmore').animate({'opacity': 0}, 500, function () {
+      $(this).text('Explore more ');
+  }).animate({'opacity': 1}, 500);
+  
+  
   });
-  $(".txt123").mouseleave(function(){
-    $(".txt123").animate({'font-size':'18px'},"slow");
+
+
+/*
+  $(".texts").mouseleave(function(){
+    $(".texts").animate({'font-size':'18px'},"slow");
   
     $(".expmore").html(" >");
   });
-
+*/
 });
 
 </script>
