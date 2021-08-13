@@ -29,45 +29,66 @@
     </h1>
 </div>
 
+<br><br>
 
 <div class="section1">
-    <div class="childs1"> 
-       FREE SHIPPING !!!
+    <div class="childs1">
+      <img src="imgs/delivery-truck.png" width=25% height=25%> 
+       <p style="font-family: cursive;"> Free shipping</p>
     </div>
     <div class="childs2">
-       Easy return !!!!
+       <img src="imgs/return-policy.png" width=25% height=25%>
+       <p style="font-family: cursive;"> Easy return</p>
     </div>
     <div class="childs3">
-      Best prices !!
+        <img src="imgs/moneybag.png" width=25% height=25%>
+        <p style="font-family: cursive;"> Best prices</p>
     </div>
-
 </div>
 
 
 
-
-<div> <!-- TOP SELLERS BIG PICTURES -->
+<div><!-- TOP SELLERS BIG PICTURES -->
 </div>
 
 <!-- Categories : NECKLACE/ RINGS/ BRACELETS/ MEN / WOMEN / COUPLES
         With an explore more on hover showing more of this category (simple sql)-->
-
-
-
+<br><br><br><br><br><br><br><br><br><br><br>
 
 
 <div>
-&nbsp;&nbsp;&nbsp;
- <span class="texts" style="color:white; font-size:18px;"> Men rings &nbsp;&nbsp;</span>
+&nbsp; &nbsp; &nbsp;
+ <span class="texts" style="color:white; font-size:18px;"> Women test &nbsp;&nbsp;</span>
 <a class="expmore" href="expmore.php">
  <span class="expmore"> > </span>
 </a>
 </div>
 
 
-<div>  
+<div class="items-list">  
+  <div class="items">
+    <img src="imgs/197313437_921483241967859_3678868605241913414_n.jpg" width=10% height=10%>
+    <img src="imgs/198377199_184320446944382_7024692578465180184_n.jpg" width=10% height=10%>
+    <img src="imgs/ggg.jpg" width=10% height=10%>
+    <img src="imgs/ggg.jpg" width=10% height=10%>
+    <img src="imgs/ggg.jpg" width=10% height=10%>
+    <img src="imgs/ggg.jpg" width=10% height=10%>
+    <img src="imgs/ggg.jpg" width=10% height=10%>
+    <img src="imgs/ggg.jpg" width=10% height=10%>
+    <img src="imgs/ggg.jpg" width=10% height=10%>
+    <img src="imgs/ggg.jpg" width=10% height=10%>
+    <img src="imgs/ggg.jpg" width=10% height=10%>
+  </div>
+</div>
 
+<br><br>
 
+<div>
+&nbsp; &nbsp; &nbsp;
+ <span class="texts" style="color:white; font-size:18px;"> Men test &nbsp;&nbsp;</span>
+<a class="expmore" href="expmore.php">
+ <span class="expmore"> > </span>
+</a>
 </div>
 
 
@@ -94,10 +115,7 @@ $(document).ready(function(){
 
 
 
-    //$('.expmore').delay(2000).animate({'opacity': 0}, 500);
-    //$(".expmore").delay(1000).animate({'opacity': 1}, 500, function() {
-    ///  $(this).html('>')
-    //});
+
    });
 
 });
