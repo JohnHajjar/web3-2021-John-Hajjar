@@ -55,7 +55,7 @@
                     Full name
                 </td>
                 <td>
-                    <input type="text" name="" id="" class="inputs" required>
+                    <input type="text" name="fullname" id="fullname" class="inputs" required>
                 </td>
             </tr>
             <tr> <!-- Username -->  
@@ -63,7 +63,7 @@
                     Username
                 </td>
                 <td>
-                    <input type="text" name="" id="inputs" class="inputs" required>
+                    <input type="text" name="username" id="username" class="inputs" required>
                 </td>
             </tr>
             <tr> <!-- Phone number -->  
@@ -71,7 +71,7 @@
                     Phone number
                 </td>
                 <td>
-                    <input type="text" name="" id="" class="inputs" required>
+                    <input type="text" name="pnumber" id="pnumber" class="inputs" required>
                 </td>
             </tr>
             <tr> <!-- E-mail -->
@@ -79,7 +79,7 @@
                     E-mail
                 </td>
                 <td>
-                    <input type="text" name="" id="" class="inputs" required>
+                    <input type="text" name="email" id="email" class="inputs" required>
                 </td>
             </tr>
             <tr> <!-- Password -->  
@@ -87,7 +87,7 @@
                     Password
                 </td>
                 <td>
-                    <input type="password" name="" id="" class="inputs" required>
+                    <input type="password" name="pass" id="pass" class="inputs" required>
                 </td>
             </tr>
             <tr> <!-- Confirm Password -->  
@@ -95,7 +95,7 @@
                     Confirm Password
                 </td>
                 <td>
-                    <input type="text" name="" id="" class="inputs" required>
+                    <input type="password" name="cpass" id="cpass" class="inputs" required>
                 </td>
             </tr>
             <tr align=center> <!-- Submit button -->
