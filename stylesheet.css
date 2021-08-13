@@ -236,6 +236,19 @@ a {
 }
 
 
+.expmore {
+  color : goldenrod;
+  font-size: small;
+}
+
+.section1 {
+  margin: 10px;
+}
+
+.childs1{
+  background-color: #777;
+}
+
 
 
 /*  END store page */

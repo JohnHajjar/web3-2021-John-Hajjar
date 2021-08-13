@@ -30,6 +30,22 @@
 </div>
 
 
+<div class="section1">
+    <div class="childs1"> 
+       FREE SHIPPING !!!
+    </div>
+    <div class="childs2">
+       Easy return !!!!
+    </div>
+    <div class="childs3">
+      Best prices !!
+    </div>
+
+</div>
+
+
+
+
 <div> <!-- TOP SELLERS BIG PICTURES -->
 </div>
 
@@ -43,36 +59,47 @@
 <div>
 &nbsp;&nbsp;&nbsp;
  <span class="texts" style="color:white; font-size:18px;"> Men rings &nbsp;&nbsp;</span>
-<span class="expmore" style="color:cyan;"> > </span>
+<a class="expmore" href="expmore.php">
+ <span class="expmore"> > </span>
+</a>
+</div>
+
+
+<div>  
+
+
 </div>
 
 
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-hi
+
 <script>
-
-
 
 
 
 $(document).ready(function(){
   $(".texts").mouseenter(function(){
     $('.expmore').animate({'opacity': 0}, 500, function () {
-      $(this).text('Explore more ');
+      $(this).html('Explore more ');
   }).animate({'opacity': 1}, 500);
   
+   });
+
+   $(".texts").mouseleave(function(){
   
-  });
+    $('.expmore').delay(4000).animate({'opacity': 0}, 500, function () {
+      $(this).html('>');
+  }).animate({'opacity': 1}, 500);
 
 
-/*
-  $(".texts").mouseleave(function(){
-    $(".texts").animate({'font-size':'18px'},"slow");
-  
-    $(".expmore").html(" >");
-  });
-*/
+
+    //$('.expmore').delay(2000).animate({'opacity': 0}, 500);
+    //$(".expmore").delay(1000).animate({'opacity': 1}, 500, function() {
+    ///  $(this).html('>')
+    //});
+   });
+
 });
 
 </script>
