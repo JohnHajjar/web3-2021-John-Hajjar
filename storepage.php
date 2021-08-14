@@ -5,8 +5,9 @@
     <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
     <script src="https://kit.fontawesome.com/a0043d9bc2.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-<script type="text/javascript" src="script.js"></script>
- </head>
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="jquery-comp-3.6.js"></script>
+  </head>
 
     <body class="storepagecss">
    
@@ -46,14 +47,29 @@
     </div>
 </div>
 
-
-
-<div><!-- TOP SELLERS BIG PICTURES -->
+<br><br><br><br><br><br><br><br><br><br>
+<!--style="display:inline;"-->
+<div align=center>
+    <div class="h2men" align=center >
+      <h1 style="color:white; font-family: Neoneon,sans-serif;"> MEN </h1>
+    </div>
+    <div class="h2women" align=center >
+      <h1 style="color:white; font-family: Neoneon,sans-serif;"> WOMEN </h1>
+    </div>
+    <div class="h2both" align=center >
+        <h1 style="color:white; font-family: Neoneon,sans-serif;"> UNISEX </h1>
+    </div>
 </div>
+
+<br><br>
+<br><br><br><br><br><br><br><br>
+
+
+
 
 <!-- Categories : NECKLACE/ RINGS/ BRACELETS/ MEN / WOMEN / COUPLES
         With an explore more on hover showing more of this category (simple sql)-->
-<br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br>
 
 
 <div>
@@ -67,17 +83,10 @@
 
 <div class="items-list">  
   <div class="items">
-    <img src="imgs/197313437_921483241967859_3678868605241913414_n.jpg" width=10% height=10%>
-    <img src="imgs/198377199_184320446944382_7024692578465180184_n.jpg" width=10% height=10%>
-    <img src="imgs/ggg.jpg" width=10% height=10%>
-    <img src="imgs/ggg.jpg" width=10% height=10%>
-    <img src="imgs/ggg.jpg" width=10% height=10%>
-    <img src="imgs/ggg.jpg" width=10% height=10%>
-    <img src="imgs/ggg.jpg" width=10% height=10%>
-    <img src="imgs/ggg.jpg" width=10% height=10%>
-    <img src="imgs/ggg.jpg" width=10% height=10%>
-    <img src="imgs/ggg.jpg" width=10% height=10%>
-    <img src="imgs/ggg.jpg" width=10% height=10%>
+    <div class="itemdetails">
+    <img src="imgs/197313437_921483241967859_3678868605241913414_n.jpg" width=10% height=10% title="helootest">
+    </div>
+
   </div>
 </div>
 

@@ -235,6 +235,52 @@ a {
  background-size: contain; 
 }
 
+.h2men {
+  margin-left:10%; 
+  width:35%; 
+  height:60%;
+  background-color: rgba(20, 170, 163, 0.4); 
+  float:left;
+}
+
+.h2women {
+  margin-right:10%; 
+  width:35%; 
+  height:60%;
+  background-color: rgb(243, 12, 231, 0.4); 
+  float:right;
+}
+
+.h2both {
+  width:35%; 
+  height: 60px;
+  /*background: linear-gradient(to right, rgba(20, 170, 163, 0.4) 50%, rgb(243, 12, 231, 0.4) 50%);*/
+  background-color: rgb(243, 12, 231, 0.4); 
+}
+
+.h2men:hover {
+  animation: selectcategory 1.4s reverse forwards; 
+}
+
+.h2both:hover {
+  animation: selectcategory 1.4s reverse forwards; 
+}
+
+.h2women:hover {
+  animation: selectcategory 1.4s reverse forwards;
+}
+
+@keyframes selectcategory {
+  0%{
+     transform : scale(0.95)
+  }
+  50%{
+      transform : scale(1.05);
+  }
+  100%{
+    transform : scale(1.1);
+  }
+}
 
 .expmore {
   color : goldenrod;
