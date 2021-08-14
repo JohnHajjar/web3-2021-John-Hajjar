@@ -238,24 +238,29 @@ a {
 .h2men {
   margin-left:10%; 
   width:35%; 
-  height:60%;
+  height:77px;
   background-color: rgba(20, 170, 163, 0.4); 
+  border: 4px solid rgba(212, 175, 55, 0.4);
   float:left;
 }
 
 .h2women {
   margin-right:10%; 
   width:35%; 
-  height:60%;
-  background-color: rgb(243, 12, 231, 0.4); 
+  height:77px;
+ /* background-color: rgb(243, 12, 231, 0.4); */
+  border: 4px solid rgba(212, 175, 55, 0.4);
+  background-color: rgb(183, 110, 121, 0.4);
   float:right;
 }
 
 .h2both {
   width:35%; 
-  height: 60px;
-  /*background: linear-gradient(to right, rgba(20, 170, 163, 0.4) 50%, rgb(243, 12, 231, 0.4) 50%);*/
-  background-color: rgb(243, 12, 231, 0.4); 
+  height:77px;
+  float:right;
+  margin-right: 32%;
+  border: 4px solid rgba(212, 175, 55, 0.4);
+  background: linear-gradient(to left, rgba(20, 170, 163, 0.4) 50%, rgb(183, 110, 121, 0.4) 50%); 
 }
 
 .h2men:hover {

@@ -47,22 +47,23 @@
     </div>
 </div>
 
-<br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br>
 <!--style="display:inline;"-->
 <div align=center>
     <div class="h2men" align=center >
-      <h1 style="color:white; font-family: Neoneon,sans-serif;"> MEN </h1>
+      <h1 style="color:white; font-family: Neoneon,sans-serif;"> MEN's SECTION</h1>
     </div>
     <div class="h2women" align=center >
-      <h1 style="color:white; font-family: Neoneon,sans-serif;"> WOMEN </h1>
-    </div>
-    <div class="h2both" align=center >
-        <h1 style="color:white; font-family: Neoneon,sans-serif;"> UNISEX </h1>
+      <h1 style="color:white; font-family: Neoneon,sans-serif;"> WOMEN's SECTION </h1>
     </div>
 </div>
+<br><br><br><br><br><br><br>
 
+    <div class="h2both" >
+        <h1 style="color:white; font-family: Neoneon,sans-serif;" align=center> UNISEX &nbsp; &nbsp;SECTION </h1>
+    </div>
 <br><br>
-<br><br><br><br><br><br><br><br>
+
 
 
 
