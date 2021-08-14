@@ -1,6 +1,8 @@
 <!DOCTYPE html>
     <html>
     <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="http://fonts.cdnfonts.com/css/neoneon" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
     <script src="https://kit.fontawesome.com/a0043d9bc2.js" crossorigin="anonymous"></script>
@@ -58,11 +60,10 @@
     </div>
 </div>
 <br><br><br><br><br><br><br>
-
     <div class="h2both" >
         <h1 style="color:white; font-family: Neoneon,sans-serif;" align=center> UNISEX &nbsp; &nbsp;SECTION </h1>
     </div>
-<br><br>
+<br>
 
 
 

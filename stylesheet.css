@@ -230,6 +230,7 @@ a {
 /* START store page */
 
 .storepagecss {
+  user-select:none;
   background-image:url(imgs/3162421.jpg);
  /* background-repeat: no-repeat;*/
  background-size: contain; 
@@ -238,28 +239,28 @@ a {
 .h2men {
   margin-left:10%; 
   width:35%; 
-  height:77px;
+  height:60%;
   background-color: rgba(20, 170, 163, 0.4); 
-  border: 4px solid rgba(212, 175, 55, 0.4);
+  border: 4px solid rgba(212, 175, 55, 0.6);
   float:left;
 }
 
 .h2women {
   margin-right:10%; 
   width:35%; 
-  height:77px;
+  height:60%;
  /* background-color: rgb(243, 12, 231, 0.4); */
-  border: 4px solid rgba(212, 175, 55, 0.4);
+  border: 4px solid rgba(212, 175, 55, 0.6);
   background-color: rgb(183, 110, 121, 0.4);
   float:right;
 }
 
 .h2both {
   width:35%; 
-  height:77px;
+  height:60%;
   float:right;
   margin-right: 32%;
-  border: 4px solid rgba(212, 175, 55, 0.4);
+  border: 4px solid rgba(212, 175, 55, 0.6);
   background: linear-gradient(to left, rgba(20, 170, 163, 0.4) 50%, rgb(183, 110, 121, 0.4) 50%); 
 }
 
