@@ -3,6 +3,12 @@ body {
     margin:0;
 }
 
+.jxlogo123 {
+  position: fixed;
+  width:15%;
+  height:10%;
+}
+
 .img1, .img2, .img3 {
   position: relative;
   opacity: 0.65;
@@ -15,7 +21,7 @@ body {
 
 .img1{
   background-image: url("imgs/img-welcome22.jpg");
-  min-height: 90%;
+  min-height: 40%;
 }
 
 .img2{
@@ -66,8 +72,9 @@ body {
 }
 
 .sidekick {
-  position: relative;
-  top:350px;
+  display:none;
+  position: absolute;
+  top:250px;
   right:100px;
   padding-left: 1em;
   border-left: 0.2em solid white; 
@@ -79,7 +86,6 @@ body {
   line-height: 1.5em;
   font-weight: 100;
 }
-
 
 
 .sidekick3 {
@@ -95,6 +101,20 @@ body {
   text-transform: lowercase;
   float:left; background-color:white
 }
+
+@media only screen and (min-width: 600px) {
+  .text123{
+    width:10%;
+    height:15%;
+  }
+  .sidekick {
+    display:block;
+  }
+
+}
+
+
+
 
 /*   Sign up now ! */
 
@@ -125,8 +145,6 @@ body {
 }
 
 
-	
-
 /* finish mainpage now ! */
 
 
@@ -153,6 +171,7 @@ a {
  float: right;
 
 }
+
 
 
 .middlepage {
