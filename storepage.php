@@ -50,10 +50,9 @@
 </div>
 
 <br><br><br><br><br><br><br><br><br><br><br>
-<!--style="display:inline;"-->
 <div align=center>
     <div class="h2men" align=center >
-      <h1 style="color:white; font-family: Neoneon,sans-serif;"> <a href="#men" style="color:white;"> MEN's SECTION </a></h1>
+      <h1 style="color:white; font-family: Neoneon,sans-serif;"> <a href="#men" style="color:white;">MEN's SECTION </a></h1>
     </div>
     <div class="h2women" align=center >
       <h1 style="color:white; font-family: Neoneon,sans-serif;"> <a href="#women" style="color:white;"> WOMEN's SECTION </a></h1>
@@ -77,7 +76,8 @@
 <!-- Necklaces -- RINGS -- Bracelets -->
 <section id="men">
   <hr>
-    <h2 style="color:white; letter-spacing:5px; font-family: Neoneon,sans-serif; color:white;" align=center> MEN </h2>
+    <h1 style="color:white; letter-spacing:5px; font-family: Neoneon,sans-serif; color:white;" align=center>
+     MEN </h1>
   <hr>
   <span class="subcategories"> Necklaces </span>
   <br>
@@ -153,8 +153,8 @@
 <section id="women">
 
 <hr>
-    <h2 style="color:white; letter-spacing:5px; font-family: Neoneon,sans-serif; color:white;" align=center>
-     WOMEN </h2>
+    <h1 style="color:white; letter-spacing:5px; font-family: Neoneon,sans-serif; color:white;" align=center>
+     WOMEN </h1>
   <hr>
   <span class="subcategories"> Necklaces </span>
   <br>
@@ -216,8 +216,8 @@
 <section id="both">
 
 <hr>
-    <h2 style="color:white; letter-spacing:5px; font-family: Neoneon,sans-serif; color:white;" align=center> 
-    UNISEX </h2>
+    <h1 style="color:white; letter-spacing:5px; font-family: Neoneon,sans-serif; color:white;" align=center> 
+    UNISEX </h1>
   <hr>
   <span class="subcategories"> Necklaces </span>
   <br>
