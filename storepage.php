@@ -53,15 +53,15 @@
 <!--style="display:inline;"-->
 <div align=center>
     <div class="h2men" align=center >
-      <h1 style="color:white; font-family: Neoneon,sans-serif;"> MEN's SECTION</h1>
+      <h1 style="color:white; font-family: Neoneon,sans-serif;"> <a href="#men" style="color:white;"> MEN's SECTION </a></h1>
     </div>
     <div class="h2women" align=center >
-      <h1 style="color:white; font-family: Neoneon,sans-serif;"> WOMEN's SECTION </h1>
+      <h1 style="color:white; font-family: Neoneon,sans-serif;"> <a href="#women" style="color:white;"> WOMEN's SECTION </a></h1>
     </div>
 </div>
 <br><br><br><br><br><br><br>
     <div class="h2both" >
-        <h1 style="color:white; font-family: Neoneon,sans-serif;" align=center> UNISEX &nbsp; &nbsp;SECTION </h1>
+        <h1 style="color:white; font-family: Neoneon,sans-serif;" align=center><a href="#both" style="color:white;">  UNISEX &nbsp; &nbsp;SECTION </a></h1>
     </div>
 <br>
 
@@ -74,6 +74,220 @@
 <br><br><br><br><br><br><br><br><br>
 
 
+<!-- Necklaces -- RINGS -- Bracelets -->
+<section id="men">
+  <hr>
+    <h2 style="color:white; letter-spacing:5px; font-family: Neoneon,sans-serif; color:white;" align=center> MEN </h2>
+  <hr>
+  <span class="subcategories"> Necklaces </span>
+  <br>
+  
+  <div class="items-list">  
+    <div class="items">
+      <!--get all items about necklaces PHP simple query -->
+      <!-- add to HREF to on click item to go to prod details -->
+      <a href="#">
+        <img src="imgs/197313437_921483241967859_3678868605241913414_n.jpg">
+      </a>
+    </div>
+  </div>
+
+  <span class="subcategories"> Bracelets </span>
+  <br>
+
+  <div class="items-list">  
+    <div class="items">
+      <!--get all items about necklaces PHP simple query -->
+      <!-- add to HREF to on click item to go to prod details -->
+      <a href="#">
+        <img src="imgs/197313437_921483241967859_3678868605241913414_n.jpg">
+      </a>
+      <img src="imgs/197313437_921483241967859_3678868605241913414_n.jpg">
+      <img src="imgs/197313437_921483241967859_3678868605241913414_n.jpg">
+      <img src="imgs/197313437_921483241967859_3678868605241913414_n.jpg">
+      <img src="imgs/197313437_921483241967859_3678868605241913414_n.jpg">
+      <img src="imgs/197313437_921483241967859_3678868605241913414_n.jpg">
+      
+    </div>
+  </div>
+
+  <span class="subcategories"> Rings </spans>
+  <br>
+
+  <div class="items-list">  
+    <div class="items">
+      <!--get all items about necklaces PHP simple query -->
+      <!-- add to HREF to on click item to go to prod details -->
+      <a href="#"> <!--EASY PHP req to prodetails-->
+       <img src="imgs/197313437_921483241967859_3678868605241913414_n.jpg">
+      </a>
+    </div>
+  </div>
+
+
+  <span class="subcategories"> Earrings </spans>
+  <br>
+
+  <div class="items-list">  
+    <div class="items">
+      <!--get all items about necklaces PHP simple query -->
+      <!-- add to HREF to on click item to go to prod details -->
+      <a href="#">
+        <img src="imgs/197313437_921483241967859_3678868605241913414_n.jpg">
+      </a>
+      <img src="imgs/197313437_921483241967859_3678868605241913414_n.jpg">
+      <img src="imgs/197313437_921483241967859_3678868605241913414_n.jpg">
+      <img src="imgs/197313437_921483241967859_3678868605241913414_n.jpg">
+      <img src="imgs/197313437_921483241967859_3678868605241913414_n.jpg">
+      <img src="imgs/197313437_921483241967859_3678868605241913414_n.jpg">
+      <img src="imgs/197313437_921483241967859_3678868605241913414_n.jpg">
+      <img src="imgs/197313437_921483241967859_3678868605241913414_n.jpg">
+      
+    </div>
+  </div>
+  
+</section>
+
+<br><b><br>
+
+<section id="women">
+
+<hr>
+    <h2 style="color:white; letter-spacing:5px; font-family: Neoneon,sans-serif; color:white;" align=center>
+     WOMEN </h2>
+  <hr>
+  <span class="subcategories"> Necklaces </span>
+  <br>
+  
+  <div class="items-list">  
+    <div class="items">
+      <!--get all items about necklaces PHP simple query -->
+      <!-- add to HREF to on click item to go to prod details -->
+      <a href="#">
+        <img src="imgs/197313437_921483241967859_3678868605241913414_n.jpg">
+      </a>
+    </div>
+  </div>
+
+  <span class="subcategories"> Bracelets </span>
+  <br>
+
+  <div class="items-list">  
+    <div class="items">
+      <!--get all items about necklaces PHP simple query -->
+      <!-- add to HREF to on click item to go to prod details -->
+      <a href="#">
+        <img src="imgs/197313437_921483241967859_3678868605241913414_n.jpg">
+      </a>
+    </div>
+  </div>
+
+  <span class="subcategories"> Rings </spans>
+  <br>
+
+  <div class="items-list">  
+    <div class="items">
+      <!--get all items about necklaces PHP simple query -->
+      <!-- add to HREF to on click item to go to prod details -->
+      <a href="#"> <!--EASY PHP req to prodetails-->
+       <img src="imgs/197313437_921483241967859_3678868605241913414_n.jpg">
+      </a>
+    </div>
+  </div>
+
+
+  <span class="subcategories"> Earrings </spans>
+  <br>
+
+  <div class="items-list">  
+    <div class="items">
+      <!--get all items about necklaces PHP simple query -->
+      <!-- add to HREF to on click item to go to prod details -->
+      <a href="#">
+        <img src="imgs/197313437_921483241967859_3678868605241913414_n.jpg">
+      </a>
+    </div>
+  </div>
+
+</section>
+
+<br><br>
+
+<section id="both">
+
+<hr>
+    <h2 style="color:white; letter-spacing:5px; font-family: Neoneon,sans-serif; color:white;" align=center> 
+    UNISEX </h2>
+  <hr>
+  <span class="subcategories"> Necklaces </span>
+  <br>
+  
+  <div class="items-list">  
+    <div class="items">
+      <!--get all items about necklaces PHP simple query -->
+      <!-- add to HREF to on click item to go to prod details -->
+      <a href="#">
+        <img src="imgs/197313437_921483241967859_3678868605241913414_n.jpg">
+      </a>
+      <img src="imgs/197313437_921483241967859_3678868605241913414_n.jpg">
+      
+      <img src="imgs/197313437_921483241967859_3678868605241913414_n.jpg">
+      
+      <img src="imgs/197313437_921483241967859_3678868605241913414_n.jpg">
+      
+      <img src="imgs/197313437_921483241967859_3678868605241913414_n.jpg">
+      
+      <img src="imgs/197313437_921483241967859_3678868605241913414_n.jpg">
+      
+    </div>
+  </div>
+
+  <span class="subcategories"> Bracelets </span>
+  <br>
+
+  <div class="items-list">  
+    <div class="items">
+      <!--get all items about necklaces PHP simple query -->
+      <!-- add to HREF to on click item to go to prod details -->
+      <a href="#">
+        <img src="imgs/197313437_921483241967859_3678868605241913414_n.jpg">
+      </a>
+    </div>
+  </div>
+
+  <span class="subcategories"> Rings </spans>
+  <br>
+
+  <div class="items-list">  
+    <div class="items">
+      <!--get all items about necklaces PHP simple query -->
+      <!-- add to HREF to on click item to go to prod details -->
+      <a href="#"> <!--EASY PHP req to prodetails-->
+       <img src="imgs/197313437_921483241967859_3678868605241913414_n.jpg">
+      </a>
+    </div>
+  </div>
+
+
+  <span class="subcategories"> Earrings </spans>
+  <br>
+
+  <div class="items-list">  
+    <div class="items">
+      <!--get all items about necklaces PHP simple query -->
+      <!-- add to HREF to on click item to go to prod details -->
+      <a href="#">
+        <img src="imgs/197313437_921483241967859_3678868605241913414_n.jpg">
+      </a>
+    </div>
+  </div>
+
+</section>
+
+
+
+
+<br><br><br><br><br><br><br><br>
 <div>
 &nbsp; &nbsp; &nbsp;
  <span class="texts" style="color:white; font-size:18px;"> Women test &nbsp;&nbsp;</span>

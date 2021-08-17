@@ -28,7 +28,7 @@
 
             <div class="button" id="button-6">
             <div id="spin"></div>
-            <a class="a-button"href="\..\web3x\index.php">More about us !</a>
+            <a class="a-button" href="\..\web3x\index.php">More about us !</a>
             </div>
 
             <div class="button" id="button-5">
