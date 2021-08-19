@@ -12,8 +12,8 @@
 
 
 <div class="upbar">
-    <a href="welcomepage.php"> 
-        <img src="imgs/whitejxlogo.jpg" width="55px" height=50px style="margin: 10px;">
+    <a href="../welcomepage.php"> 
+        <img src="../imgs/whitejxlogo.jpg" width="55px" height=50px style="margin: 10px;">
     </a>
     
 <div class="upbar2">
@@ -40,7 +40,7 @@
     </div>
 </div>
 
-</div>>
+</div>
 
 
 </body>

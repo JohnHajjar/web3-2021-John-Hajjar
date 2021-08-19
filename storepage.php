@@ -102,7 +102,7 @@ $conn = new mysqli('localhost', 'root', '', 'webdb3');
     <div class="items">
         <?php 
             $sqlnecklacemen = 
-            "SELECT ID, ProductName, ProductType, Imagesrc, Keywords, Gender, Price FROM productinfo WHERE Gender='MEN' AND ProductType='NECKLACES' ";
+            "SELECT ID, ProductName, ProductType, Imagesrc, Keywords, Gender, Price FROM productinfo WHERE Gender='".$men."' AND ProductType='".$necklaces."' ";
             $resnecklacemen = mysqli_query($conn,$sqlnecklacemen);
             $counter = 0;
             while ($arr = mysqli_fetch_assoc($resnecklacemen)){
@@ -111,10 +111,16 @@ $conn = new mysqli('localhost', 'root', '', 'webdb3');
               echo '</a>';
               echo "<div id=\"popup".$arr['ID']."\" class=\"overlay\">";
                 echo '<div class="popup">';
-                  echo '<h2> '.$arr['ProductName'].' </h2>';
+                  echo '<h3> '.$arr['ProductName'].' </h3>';
                   echo '<a class="close" href="#men"> &times; </a>';
                   echo '<div class="content">';
-                    echo 'henlo';
+                    echo 'Product type : '. strtolower($arr['ProductType']) . ' for ' . strtolower($arr['Gender']);
+                    echo '<img src="'.$arr['Imagesrc'].'" >';
+                    echo '<br><br>';
+                    echo 'Price : '. $arr['Price'] . ' $ <br>';
+                    echo '<button onclick="addtocart("'.$SESSION['ID'].'", "'.$arr['ID'].'")"> Clickme </button>';
+                    echo '<hr>';
+                    echo '<p>Keywords related to this product : ' . $arr['Keywords'] . '</p>';
                   echo "</div>";
                 echo "</div>";
               echo "</div>";
@@ -361,8 +367,24 @@ $conn = new mysqli('localhost', 'root', '', 'webdb3');
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 <script>
+/*
+addtocart(iduser, idproduct) {
+  <?php //USE JQUERY FOR THIS FUNCTION 
+ /* $sqlcheck = "SELECT * FROM cart 
+  WHERE IDuser='".$iduser."' AND IDproduct='".$idproduct."' ";
+  $rescheck = mysqli_query($conn,$sqlcheck);
+  if (mysqli_num_rows($rescheck) == 0 ) {
+    $sqladd = "INSERT INTO cart (IDuser,IDproduct) VALUES ('".$iduser."', '".$idproduct."')";
+    $resadd = mysqli_query($conn,$sqladd);
+    } else {
+      echo 'Product is already added to cart';
+    }
+    
+    */?>
+}*/
 
 
+/*
 
 $(document).ready(function(){
   $(".texts").mouseenter(function(){
@@ -383,7 +405,7 @@ $(document).ready(function(){
 
    });
 
-});
+});*/
 
 </script>
 

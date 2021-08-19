@@ -245,16 +245,15 @@ a {
 }
 
 
-/* THIS IS JUST A TEST FOR SLIDER */
 /* START store page */
 
 .storepagecss {
   user-select:none;
   background-image:url(imgs/3162421.jpg);
  /* background-repeat: no-repeat;*/
- background-size: contain; 
+  background-size: contain; 
 }
-
+/*
 .h2men {
   margin-left:10%; 
   width:35%; 
@@ -310,40 +309,120 @@ a {
   color : goldenrod;
   font-size: small;
 }
+*/
+
 
 .section1 {
   text-align: center;
   color:white;
 }
 
-
-
-
-.childs1{
+.childs11{
   float:left;
   width: 18%;
   height: 30%;
   background-color: rgba(212,175,55, 0.4);
+  color:white;
   margin-left: 13%;
   margin-right: 5%;
 }
 
-.childs2{
+.childs22{
   float:left;
   width: 18%;
   height: 30%;
   background-color: rgba(212,175,55, 0.4);
+  color:white;
   margin-left: 5%;
   margin-right: 5%;
 }
 
-.childs3{
+.childs33{
   float:left;
   width: 18%;
   height: 30%;
   background-color: rgba(212, 175, 55, 0.4);
+  color:white;
   margin-left: 5%;
 }
+
+/*@media screen and (max-width: 600px) {
+  .childs33 {
+    color:black;
+  }
+}*/
+
+.childs11:hover {
+  animation: selectcategory 1.4s ease-in forwards;
+}
+.childs22:hover {
+  animation: selectcategory 1.4s ease-in forwards;
+}
+.childs33:hover {
+  animation: selectcategory 1.4s ease-in forwards;
+}
+
+@keyframes selectcategory {
+  0%{
+     transform : scale(1)
+  }
+  50%{
+      transform : scale(1.05);
+  }
+  100%{
+    transform : scale(1.15);
+  }
+}
+
+.section2 {
+  width: 90%;
+  height: auto;
+  margin: auto;
+  background-color: whitesmoke;
+
+
+}
+
+.categmen{
+  margin-left: 20%;
+}
+
+.categmen img {
+  width:100%;
+  height:auto;
+}
+
+.categwomen img {
+  width:100%;
+  height:auto;
+}
+
+.categboth img {
+  width:100%;
+  height:auto;
+}
+
+.categmen , .categwomen, .categboth{
+  margin-left:10px;
+  width:30%;
+  height:auto;
+  float:left;
+  background-color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*****/
 
 .subcategories {
   color:white;
@@ -429,7 +508,7 @@ a {
   color: #333;
 }
 .popup .close:hover {
-  color: #06D85F;
+  color: rgba(212, 175, 55, 0.7);
 }
 .popup .content {
   max-height: 30%;
