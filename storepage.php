@@ -15,7 +15,7 @@
    
 
 
-    <?php 
+    <?php include 'db.php';
                 //TO ADD IF SIGNED IN OR NOT
                 // USER MUST NOT ENTER THE SHOP IF NOT SIGNED IN AKA A SESSION IN PLACE !!!!!
     //if (!isset($_SESSION)) { header ('location : welcomepage.php'); }
@@ -52,19 +52,34 @@
 <br><br><br><br><br><br><br><br><br><br><br>
 <div align=center>
     <div class="h2men" align=center >
-      <h1 style="color:white; font-family: Neoneon,sans-serif;"> <a href="#men" style="color:white;">MEN's SECTION </a></h1>
+      <h1 style="color:white; font-family: Neoneon,sans-serif;"> 
+        <a href="#men" style="color:white;">MEN's SECTION </a></h1>
     </div>
     <div class="h2women" align=center >
-      <h1 style="color:white; font-family: Neoneon,sans-serif;"> <a href="#women" style="color:white;"> WOMEN's SECTION </a></h1>
+      <h1 style="color:white; font-family: Neoneon,sans-serif;"> 
+      <a href="#women" style="color:white;"> WOMEN's SECTION </a></h1>
     </div>
 </div>
 <br><br><br><br><br><br><br>
     <div class="h2both" >
-        <h1 style="color:white; font-family: Neoneon,sans-serif;" align=center><a href="#both" style="color:white;">  UNISEX &nbsp; &nbsp;SECTION </a></h1>
+        <h1 style="color:white; font-family: Neoneon,sans-serif;" align=center>
+        <a href="#both" style="color:white;">  UNISEX &nbsp; &nbsp;SECTION </a></h1>
     </div>
 <br>
 
+<!-- VARS FOR CATEGORIES AND SUB CATEGORIES -->
 
+<?php
+
+$conn = new mysqli('localhost', 'root', '', 'webdb3');
+  $men = 'MEN';
+  $women = 'WOMEN';
+  $necklaces = 'NECKLACES';
+  $bracelets = 'BRACELETS';
+  $rings = 'RINGS';
+  $earrings = 'EARRINGS';
+
+?>
 
 
 
@@ -80,11 +95,36 @@
      MEN </h1>
   <hr>
   <span class="subcategories"> Necklaces </span>
+
   <br>
   
   <div class="items-list">  
     <div class="items">
-      <!--get all items about necklaces PHP simple query -->
+        <?php 
+            $sqlnecklacemen = 
+            "SELECT ID, ProductName, ProductType, Imagesrc, Keywords, Gender, Price FROM productinfo WHERE Gender='MEN' AND ProductType='NECKLACES' ";
+            $resnecklacemen = mysqli_query($conn,$sqlnecklacemen);
+            $counter = 0;
+            while ($arr = mysqli_fetch_assoc($resnecklacemen)){
+              echo "<a href=\"#popup".$arr['ID']."\">";
+                echo '<img src="'.$arr['Imagesrc'].'" >';
+              echo '</a>';
+              echo "<div id=\"popup".$arr['ID']."\" class=\"overlay\">";
+                echo '<div class="popup">';
+                  echo '<h2> '.$arr['ProductName'].' </h2>';
+                  echo '<a class="close" href="#men"> &times; </a>';
+                  echo '<div class="content">';
+                    echo 'henlo';
+                  echo "</div>";
+                echo "</div>";
+              echo "</div>";
+              $counter++;
+            }
+          
+        ?>    
+    
+    
+    <!--get all items about necklaces PHP simple query -->
       <!-- add to HREF to on click item to go to prod details -->
       <a href="#">
         <img src="imgs/197313437_921483241967859_3678868605241913414_n.jpg">
