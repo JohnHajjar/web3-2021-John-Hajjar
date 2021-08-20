@@ -374,48 +374,114 @@ a {
   }
 }
 
+
+/* SECTION 2 CATEGORIES*/
 .section2 {
-  width: 90%;
-  height: auto;
-  margin: auto;
-  background-color: whitesmoke;
-
-
+  width:90%;
+  background-color: transparent;
+  display:inline-flex;
+  margin-left: 5%;
 }
-
-.categmen{
-  margin-left: 20%;
+.categmen, .categwomen, .categboth{
+  width:90%;
+  height:auto;
+  margin-left:5%;
+  position: relative;
+  /*overflow:hidden;*/
+  background-color: transparent;
+  transition: transform 2s ease;
 }
 
 .categmen img {
   width:100%;
   height:auto;
+  border-radius: 0.5rem;  
 }
 
 .categwomen img {
   width:100%;
   height:auto;
+  border-radius: 0.5rem;
 }
 
 .categboth img {
   width:100%;
   height:auto;
+  border-radius: 0.5rem;
 }
 
-.categmen , .categwomen, .categboth{
-  margin-left:10px;
-  width:30%;
-  height:auto;
-  float:left;
-  background-color: white;
+.categ-text{
+  position:absolute;
+  align-items: center;
+  justify-content: center;
+  width:80%; height:auto;
+  color:whitesmoke;
+  border: 2px solid white;
+  background-color: rgba(160, 160, 160, 0.7);
+  opacity:0;
+  left: 25px;
+  top: 30%;
+  transition: transform 2s .5s ease-in;
 }
 
+.categ-text h2{
+  font-size: 3rem;
+  font-family:monospace;
+  color:whitesmoke;
+  text-align: center;
+}
+.categmen:hover {
+  transform: scale(1.05);
+}
+.categwomen:hover {
+  transform: scale(1.05);
+}
+.categboth:hover {
+  transform: scale(1.05);
+}
+
+.categmen:hover .categ-text{
+  opacity:1;
+}
+
+.categwomen:hover .categ-text{
+  opacity:1
+}
+
+.categboth:hover .categ-text{
+  opacity: 1;
+}
+
+.smscreen-men, .smscreen-women, .smscreen-both {
+  display:none;
+}
+/*EASY TESTING */ 
 
 
+@media screen and (max-width:890px) {
+  .categ-text {
+    display:none;
+  }
+  .smscreen-men, .smscreen-women, .smscreen-both {
+    width:100%;
+    height:100%;
+    display:contents;
+    position:relative;
+    text-align: center;
+    font-size: 0.9rem;
+    font-family:monospace;
+    color:rgba(212,175,55, 1);
 
+  }
 
+  .categmen, .categwomen, .categboth{
+    border: 2px solid whitesmoke;
+    background-color: whitesmoke;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+  }
 
-
+}
 
 
 
@@ -520,6 +586,108 @@ a {
 
 
 /*  END store page */
+
+
+
+/* FOOTER PAGE */
+
+@import url('http://fonts.cdnfonts.com/css/brandon-grotesque-regular');
+.footer-body{
+  background-color:black;
+  text-transform: uppercase;
+  color:white;
+  font-size: 15px;
+  letter-spacing: 1.5px;
+  margin-left: 10%;
+  margin-top: 5%;
+  font-family: "brandon-grotesque", sans-serif;
+}
+
+
+.footer-list {
+  list-style-type: none;
+  width:auto; height: auto;
+  border-left: .2rem solid rgba(212, 175, 55, 1);
+}
+
+.footer-list > li  {
+  margin-bottom: 20px;
+  font-style:oblique;
+} 
+
+.footer-list > li:hover {
+  color: rgba(212, 175, 55, 1);
+
+}
+
+.footer-support{
+  float:left;
+}
+
+.footer-company {
+  float:left;
+  margin-left: 15%;
+}
+
+.footer-socials{
+  top:0;
+  left:0;
+}
+.footer-socials > h2 {
+  border-bottom: .2rem solid rgba(212, 175, 55, 1);;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa {
+  padding: 20px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+
+
+
+/*END FOOTER PAGEE !!!*/
+
+
+
+
+
+
+
+
+
 
 
 

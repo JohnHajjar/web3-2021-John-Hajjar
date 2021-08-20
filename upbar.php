@@ -11,7 +11,7 @@
   <?php $current_file_name = basename($_SERVER['PHP_SELF']);  ?>
 
 
-<div class="upbar">
+<div class="upbar" style="background-color:black;">
     <a href="../welcomepage.php"> 
         <img src="../imgs/whitejxlogo.jpg" width="55px" height=50px style="margin: 10px;">
     </a>

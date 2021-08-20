@@ -365,7 +365,7 @@ $conn = new mysqli('localhost', 'root', '', 'webdb3');
 
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
+<?php include 'footer.php'; ?>
 <script>
 /*
 addtocart(iduser, idproduct) {

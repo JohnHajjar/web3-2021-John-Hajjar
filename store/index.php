@@ -7,6 +7,9 @@
         <link href="http://fonts.cdnfonts.com/css/neoneon" rel="stylesheet">
         <script src="https://kit.fontawesome.com/a0043d9bc2.js" crossorigin="anonymous"></script>
         <script type="text/javascript" src="jquery-comp-3.6.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="http://fonts.cdnfonts.com/css/brandon-grotesque-regular" rel="stylesheet">
+
     </head>
     <body class="storepagecss">
             <?php include '../db.php'; ?>
@@ -48,36 +51,77 @@
                 </a>
             </div>
 
-            <br><br><br><br><br><br><br><br><br><br>
-            <section id="categories">
+            <br><br><br><br><br><br><br><br><br><br><br>
+        <section id="categories">
             <hr>
                 <h1 style="color:white; letter-spacing:5px; font-family: Neoneon,sans-serif; color:white;" align=center>
                 Categories </h1>
-            <hr>
-
+            <hr><br><br>
             <div class="section2">
                 <a href="#">
                     <div class="categmen">
-                       <img src="https://i.pinimg.com/originals/f3/cc/e9/f3cce99e7d9ff4302cbe29c3954f6ac9.jpg">
-                     MEN
+                        <img src="imgs/menjewerlrycat.jpg">
+                        <div class="categ-text">
+                            <h2>MEN'S SECTION </h2>
+                        </div>
+                        <div class="smscreen-men">
+                            <h2> MEN'S SECTION </h2>
+                        </div>
                     </div>
                 </a>
                 <a href="#">
                     <div class="categwomen">
-                        <img src="https://www.graff.com/dw/image/v2/BFNT_PRD/on/demandware.static/-/Library-Sites-GraffSharedLibrary/default/dwd4c7c7be/images/_Content%20Refresh/2021.07%20Endless%20Summer/Homepage_Resupply_Mobile.jpg">
-                        WOMEN
+                        <img src="imgs/jewlrycategorywomenwebp.png">
+                        <div class="categ-text">
+                            <h2> WOMEN'S SECTION </h2>
+                        </div>
+                        <div class="smscreen-women">
+                            <h2>WOMEN'S SECTION </h2>    
+                        </div>
                     </div>
                 </a>
                 <a href="#">
                     <div class="categboth">
-                        <img src="https://sc04.alicdn.com/kf/H6696d78f0cec4ed8b255805f86f19802D.jpg">
-                        UNISEX
+                        <img src="imgs/categboth.png">
+                        <div class="categ-text">
+                            <h2>UNISEX SECTION</h2>
+                        </div>
+                        <div class="smscreen-both"> 
+                            <h2>UNISEX'S SECTION</h2>
+                        </div>
                     </div>
                 </a>
             </div>
-
+        </section>
+            <br><br>
+            <section class="section3">
+                <hr>
+                <h1 style="color:white; letter-spacing:5px; font-family: Neoneon,sans-serif; color:white;" align=center>
+                NEWEST ITEMS </h1>
+                <hr><br>
+    
+            
             </section>
-        <br><br><br><br><br><br><br><br><br><br><br><br>
-        <p>hi</p>
+            <br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br>
+            <section class="section4">
+                <hr>
+                <h1 style="color:white; letter-spacing:5px; font-family: Neoneon,sans-serif; color:white;" align=center>
+                BEST SELLERS </h1>
+                <hr><br>
+    
+            
+            </section>
+
+
+
+            <br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br>
+            <div style="background-color:black;">
+                <?php include '../footer.php'; ?>
+            </div>
+            
+            <br>
+        
     </body>
 </html>
