@@ -6,37 +6,7 @@
 
 <body class="pagesignupcss">
 
-<!-- 123
-<div class="upbar">
-    <a href="welcome.php">
-        <img src="imgs/whitejxlogo.jpg" width="9%" height=50px style="margin: 10px;">
-    </a>
-
-
-
-
-    <div class="button" id="button-5">
-        <div id="translate"></div>
-        <a class="a-button" href="login.php"> Login </a>
-    </div>
-
-
-
-
-    
-    <div class="button" id="button-6">
-        <div id="spin"></div>
-        <a class="a-button" href="\..\web3x\index.php"> About Us </a>
-    </div>     
-        
-    <div class="button" id="button-5">
-        <div id="translate"></div>
-        <a class="a-button" href="#">Policy</a>
-    </div></div>
--->
-
-
-        <?php include 'upbar.php'; ?>
+    <?php include 'upbar.php'; ?>
 
 
 <div class="middlepage">
