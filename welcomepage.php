@@ -33,7 +33,7 @@
 
             <div class="button" id="button-5">
                 <div id="translate"></div>
-                <a class="a-button" href="storepage.php">Shop now!</a>
+                <a class="a-button" href="store/">Shop now!</a>
             </div>
     </div> 
     

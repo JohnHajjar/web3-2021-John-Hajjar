@@ -1,6 +1,28 @@
-
+@import url('http://fonts.cdnfonts.com/css/brandon-grotesque-regular');
 body {
     margin:0;
+    user-select:none;
+    font-family: "brandon-grotesque", sans-serif;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 9px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: rgba(1,1,1,255); 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(212, 175, 55, 0.8);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(212, 175, 55, 1); 
 }
 
 .jxlogo123 {
@@ -310,7 +332,9 @@ a {
   font-size: small;
 }
 */
-
+hr {
+  opacity:1; border:2; color:white;
+}
 
 .section1 {
   text-align: center;
@@ -592,6 +616,7 @@ a {
 /* FOOTER PAGE */
 
 @import url('http://fonts.cdnfonts.com/css/brandon-grotesque-regular');
+
 .footer-body{
   background-color:black;
   text-transform: uppercase;
@@ -617,6 +642,7 @@ a {
 
 .footer-list > li:hover {
   color: rgba(212, 175, 55, 1);
+  cursor: pointer;
 
 }
 
@@ -633,10 +659,19 @@ a {
   top:0;
   left:0;
 }
+
 .footer-socials > h2 {
   border-bottom: .2rem solid rgba(212, 175, 55, 1);;
 }
-
+/*
+.footer-socials > h2::after {
+  content: '';
+  background-color: red;
+  width: 80px;
+  height: 10px;
+  display: block;
+}
+*/
 .fa-facebook {
   background: #3B5998;
   color: white;
@@ -674,23 +709,69 @@ a {
 .fa:hover {
     opacity: 0.7;
 }
-
-
-
-
 /*END FOOTER PAGEE !!!*/
 
+/*START OF /STORE/MEN */
+
+.cover-imgs {
+  width:100%;
+  overflow:hidden;
+  display:block;
+}
+
+.cover-imgs img {
+  width:101%; /* fixing the white line on the right */
+  height:auto;
+}
+
+.cover-imgs h1 {
+  float:left; 
+  position:absolute;
+  margin-left:30%;
+  margin-top:-15%;
+  background-color: rgba(255, 255, 255, 0.8);
+  color:black;
+  padding:10px;
+
+}
+
+@media screen and (min-width:800px){
+.cover-imgs h1 {
+  margin-left:35%;
+  }
+}
+
+@media screen and (min-width:1100px){
+  .cover-imgs h1 {
+    margin-left:40%;
+    margin-top:-25%;
+  }
+  }
+
+  /* @media screen and (min-width:1050px){
+    .cover-imgs h1 {
+      margin-left:50%;
+      margin-top: -35%;
+    }
+    }
+     */
+  
 
 
 
 
+/*END OF /STORE/MEN*/
+
+/* STORE ITEMS . PHP */
+
+  .storeitem-h1 { 
+    letter-spacing:5px; 
+    font-family: Neoneon,sans-serif; 
+    color:white;
+  }
 
 
-
-
-
-
-
+/* END STORE ITEMS . PHP */
 
 
 
