@@ -15,7 +15,7 @@
         <?php include '../../db.php'; ?>
         <?php include '../../upbar.php'; ?>   
         <div class="cover-imgs">
-            <img src="https://cfs3.monicavinader.com/images/2020-plp-banner-desktop/13618581-mv-web-mens-edit-2021-top-tile-v3.jpg">
+            <img src="https://www.padani.com/pub/media/wysiwyg/blog/Untitled-1_0000.jpg">
           <h1 align=center>Best jewelry <br> for everyday use </h1>
         </div>
 

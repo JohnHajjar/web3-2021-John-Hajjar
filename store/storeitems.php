@@ -32,48 +32,45 @@
             $resnecklace = mysqli_query($conn,$sqlnecklaces);
             $counter1 = 0;
             while ($arr = mysqli_fetch_assoc($resnecklace)){
-                echo '<a href="/products.php?ID='.$arr['ID'].'" >';
-                echo '<img src="'.$arr['Imagesrc'].'" >';
-                echo '</a>';
+                echo '<form id="prodetails" class="formproducts" method="post" action="../products/" target="_blank">';
+                echo '<input type="hidden" id="prodid" name="prodid" value="'.$arr['ID'].'" > ';
+                echo '<input type="image" src="'.$arr['Imagesrc'].'"  class="img-items" >';
+                echo '</form>';
                 $counter1++;
             }
 
-
-
-
-
-
-            // $sqlquerynecklace =
+     // $sqlquerynecklace =
             // "SELECT ID, ProductName, ProductType, Imagesrc, Keywords, Gender, Price FROM productinfo WHERE Gender='".$dirgender."' AND ProductType='NECKLACES' ";
             // $resnecklacemen = mysqli_query($conn,$sqlnecklacemen);
             // $counter = 0;
-        //     while ($arr = mysqli_fetch_assoc($resnecklacemen)){
-        //       echo "<a href=\"#popup".$arr['ID']."\">";
-        //         echo '<img src="'.$arr['Imagesrc'].'" >';
-        //       echo '</a>';
-        //       echo "<div id=\"popup".$arr['ID']."\" class=\"overlay\">";
-        //         echo '<div class="popup">';
-        //           echo '<h3> '.$arr['ProductName'].' </h3>';
-        //           echo '<a class="close" href="#men"> &times; </a>';
-        //           echo '<div class="content">';
-        //             echo 'Product type : '. strtolower($arr['ProductType']) . ' for ' . strtolower($arr['Gender']);
-        //             echo '<img src="'.$arr['Imagesrc'].'" >';
-        //             echo '<br><br>';
-        //             echo 'Price : '. $arr['Price'] . ' $ <br>';
-        //             echo '<button onclick="addtocart("'.$SESSION['ID'].'", "'.$arr['ID'].'")"> Clickme </button>';
-        //             echo '<hr>';
-        //             echo '<p>Keywords related to this product : ' . $arr['Keywords'] . '</p>';
-        //           echo "</div>";
-        //         echo "</div>";
-        //       echo "</div>";
-        //       $counter++;
-        //     }
+            //     while ($arr = mysqli_fetch_assoc($resnecklacemen)){
+            //       echo "<a href=\"#popup".$arr['ID']."\">";
+            //         echo '<img src="'.$arr['Imagesrc'].'" >';
+            //       echo '</a>';
+            //       echo "<div id=\"popup".$arr['ID']."\" class=\"overlay\">";
+            //         echo '<div class="popup">';
+            //           echo '<h3> '.$arr['ProductName'].' </h3>';
+            //           echo '<a class="close" href="#men"> &times; </a>';
+            //           echo '<div class="content">';
+            //             echo 'Product type : '. strtolower($arr['ProductType']) . ' for ' . strtolower($arr['Gender']);
+            //             echo '<img src="'.$arr['Imagesrc'].'" >';
+            //             echo '<br><br>';
+            //             echo 'Price : '. $arr['Price'] . ' $ <br>';
+            //             echo '<button onclick="addtocart("'.$SESSION['ID'].'", "'.$arr['ID'].'")"> Clickme </button>';
+            //             echo '<hr>';
+            //             echo '<p>Keywords related to this product : ' . $arr['Keywords'] . '</p>';
+            //           echo "</div>";
+            //         echo "</div>";
+            //       echo "</div>";
+            //       $counter++;
+            //     }
 
         // ?>
 
 
-    <!--get all items about necklaces PHP simple query -->
-      <!-- add to HREF to on click item to go to prod details -->
+
+
+      
 
     </div>
   </div>
@@ -83,16 +80,19 @@
 
   <div class="items-list">
     <div class="items">
-      <!--get all items about necklaces PHP simple query -->
-      <!-- add to HREF to on click item to go to prod details -->
-      <a href="#">
-        <img src="../../imgs/197313437_921483241967859_3678868605241913414_n.jpg">
-      </a>
-      <img src="../../imgs/197313437_921483241967859_3678868605241913414_n.jpg">
-      <img src="../../imgs/197313437_921483241967859_3678868605241913414_n.jpg">
-      <img src="../../imgs/197313437_921483241967859_3678868605241913414_n.jpg">
-      <img src="../../imgs/197313437_921483241967859_3678868605241913414_n.jpg">
-      <img src="../../imgs/197313437_921483241967859_3678868605241913414_n.jpg">
+          <?php
+              $gender= strtoupper($dirgender);
+              $sqlbracelets = "SELECT ID, Imagesrc FROM productinfo WHERE Gender='".$gender."' AND ProductType='BRACELETS' ";
+              $resbracelets = mysqli_query($conn,$sqlbracelets);
+              $counter2 = 0;
+              while ($arr = mysqli_fetch_assoc($resbracelets)){
+                  echo '<form id="prodetails" class="formproducts" method="post" action="../products/" target="_blank">';
+                  echo '<input type="hidden" id="prodid" name="prodid" value="'.$arr['ID'].'" > ';
+                  echo '<input type="image" src="'.$arr['Imagesrc'].'"  class="img-items" >';
+                  echo '</form>';
+                  $counter2++;
+              }
+              ?>
 
     </div>
   </div>
@@ -102,11 +102,22 @@
 
   <div class="items-list">
     <div class="items">
-      <!--get all items about necklaces PHP simple query -->
-      <!-- add to HREF to on click item to go to prod details -->
-      <a href="#"> <!--EASY PHP req to prodetails-->
-       <img src="../../imgs/197313437_921483241967859_3678868605241913414_n.jpg">
-      </a>
+      <?php
+              $gender= strtoupper($dirgender);
+              $sqlrings = "SELECT ID, Imagesrc FROM productinfo WHERE Gender='".$gender."' AND ProductType='RINGS' ";
+              $resrings = mysqli_query($conn,$sqlrings);
+              $counter3 = 0;
+              while ($arr = mysqli_fetch_assoc($resrings)){
+                  echo '<form id="prodetails" class="formproducts" method="post" action="../products/" target="_blank">';
+                  echo '<input type="hidden" id="prodid" name="prodid" value="'.$arr['ID'].'" > ';
+                  echo '<input type="image" src="'.$arr['Imagesrc'].'"  class="img-items" >';
+                  echo '</form>';
+                  $counter3++;
+              }
+              ?>
+      
+    <!-- <img src="../../imgs/197313437_921483241967859_3678868605241913414_n.jpg"> -->
+      
     </div>
   </div>
 
@@ -116,18 +127,19 @@
 
   <div class="items-list">
     <div class="items">
-      <!--get all items about necklaces PHP simple query -->
-      <!-- add to HREF to on click item to go to prod details -->
-      <a href="#">
-        <img src="imgs/197313437_921483241967859_3678868605241913414_n.jpg">
-      </a>
-      <img src="../../imgs/197313437_921483241967859_3678868605241913414_n.jpg">
-      <img src="../../imgs/197313437_921483241967859_3678868605241913414_n.jpg">
-      <img src="../../imgs/197313437_921483241967859_3678868605241913414_n.jpg">
-      <img src="../../imgs/197313437_921483241967859_3678868605241913414_n.jpg">
-      <img src="../../imgs/197313437_921483241967859_3678868605241913414_n.jpg">
-      <img src="../../imgs/197313437_921483241967859_3678868605241913414_n.jpg">
-      <img src="../../imgs/197313437_921483241967859_3678868605241913414_n.jpg">
+          <?php
+              $gender= strtoupper($dirgender);
+              $sqlearrings = "SELECT ID, Imagesrc FROM productinfo WHERE Gender='".$gender."' AND ProductType='EARRINGS' ";
+              $researrings = mysqli_query($conn,$sqlearrings);
+              $counter4 = 0;
+              while ($arr = mysqli_fetch_assoc($researrings)){
+                  echo '<form id="prodetails" class="formproducts" method="post" action="../products/" target="_blank">';
+                  echo '<input type="hidden" id="prodid" name="prodid" value="'.$arr['ID'].'" > ';
+                  echo '<input type="image" src="'.$arr['Imagesrc'].'"  class="img-items" >';
+                  echo '</form>';
+                  $counter4++;
+              }
+              ?>
 
     </div>
   </div>

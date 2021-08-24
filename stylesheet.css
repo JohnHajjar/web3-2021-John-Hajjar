@@ -529,12 +529,13 @@ hr {
   margin: 15px;
   padding-right: 6px;
   border: 4px solid rgba(212, 175, 55, 0.4);
-
+  
 }
 
 .items {
   width:100%;
   height: 100%;
+  display: inline-block;
 }
 
 .items-list img {
@@ -552,7 +553,34 @@ hr {
   opacity: 0.4;
   background-color: #fc636b;
 
+} 
+
+/*-------------*/
+
+.formproducts{
+  display: inline-block;
 }
+
+.img-items {
+  width:120px;
+  height:auto;
+  margin: 5px;
+  border: 5px solid rgba(248, 225, 225, 0.15);
+}
+
+.img-items:hover {
+  background-color: rgba(212, 175, 55, 0.7);
+}
+
+.img-items:active {
+  opacity: 0.4;
+  background-color: #fc636b;
+
+} 
+
+
+
+
 
 /* POP UP ITEMS CSS */
   
@@ -728,8 +756,8 @@ hr {
   float:left; 
   position:absolute;
   margin-left:30%;
-  margin-top:-15%;
-  background-color: rgba(255, 255, 255, 0.8);
+  margin-top:-15%; 
+  background-color: rgba(255, 255, 255, 0.5);
   color:black;
   padding:10px;
 
