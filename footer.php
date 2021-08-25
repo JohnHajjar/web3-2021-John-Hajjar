@@ -39,6 +39,10 @@
         </li>            
     </ul>
     </div>
+    
+    <br class="br-smscreens"><br class="br-smscreens">
+    <br class="br-smscreens"><br class="br-smscreens">
+
     <div class="footer-company">
         <h2>COMPANY</h2>
     <ul class="footer-list">
@@ -55,15 +59,24 @@
             Careers
         </li>
     </ul>
-    </div>
-    <br><br><br><Br><br><br><br><br><br><br><br><br><Br><br><br><br><br><br><br>
+    </div> 
+
+    <br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br>
+    <br class="br-smscreens"><br class="br-smscreens">
+    <br class="br-smscreens"><br class="br-smscreens">
+    <br class="br-smscreens"><br class="br-smscreens">
+    <br class="br-smscreens"><br class="br-smscreens">
+    <br class="br-smscreens"><br class="br-smscreens">
+    <br class="br-smscreens"><br class="br-smscreens">
+
+    
     <div class="footer-socials">
         <h2> Follow us </h2>
-        <a href="#" class="fa fa-facebook"></a>
-        <a href="#" class="fa fa-twitter"></a>
-        <a href="#" class="fa fa-google"></a>
-        <a href="#" class="fa fa-youtube"></a>
         <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-google"></a>
+
     </div>
 </div>
 </body>

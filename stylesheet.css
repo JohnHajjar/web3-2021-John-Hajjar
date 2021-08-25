@@ -715,35 +715,26 @@ hr {
 .footer-socials > h2 {
   border-bottom: .2rem solid rgba(212, 175, 55, 1);;
 }
-/*
-.footer-socials > h2::after {
-  content: '';
-  background-color: red;
-  width: 80px;
-  height: 10px;
-  display: block;
+
+
+@media screen and (min-width: 400px) {
+  .br-smscreens {
+    display:none;
+  }
 }
-*/
+
+
 .fa-facebook {
   background: #3B5998;
   color: white;
 }
 
-.fa-twitter {
-  background: #55ACEE;
-  color: white;
-}
 
 .fa-google {
   background: #dd4b39;
   color: white;
 }
 
-
-.fa-youtube {
-  background: #bb0000;
-  color: white;
-}
 
 .fa-instagram {
   background: #125688;
