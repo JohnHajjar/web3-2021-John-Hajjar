@@ -113,14 +113,29 @@
     <p> Basically, our jewelry is handcrafted with the same top materials and 
         quality craftsmanship as other luxury jewelry brands but 
         without the traditional markups.    </p>
+</section>
+<br><br>
 
-<br><br><br><br><br>
+<br class="br-bigscreens"><br class="br-bigscreens"><br class="br-bigscreens">
+<br class="br-bigscreens"><br class="br-bigscreens"><br class="br-bigscreens">
+<br class="br-bigscreens"><br class="br-bigscreens"><br class="br-bigscreens">
+<br class="br-bigscreens"><br class="br-bigscreens"><br class="br-bigscreens">
+<br class="br-bigscreens"><br class="br-bigscreens"><br class="br-bigscreens">
+<br class="br-bigscreens"><br class="br-bigscreens"><br class="br-bigscreens">
+<br class="br-bigscreens"><br class="br-bigscreens"><br class="br-bigscreens">
+<br class="br-bigscreens"><br class="br-bigscreens"><br class="br-bigscreens">
+<br class="br-bigscreens"><br class="br-bigscreens"><br class="br-bigscreens">
+<br class="br-bigscreens"><br class="br-bigscreens"><br class="br-bigscreens">
+<br class="br-bigscreens"><br class="br-bigscreens"><br class="br-bigscreens">
 
+
+<div style="background-color:black; width:100%;">
 <?php include '../web3x/footer.php'; ?>
+</div>
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<!-- 
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <div class="img3">
     <div>
         <h1>
@@ -132,7 +147,7 @@
             <br> WAITING FOR DB TO BE BUILT.
         </h1>
     </div>
-</div>
+</div> -->
 
 
 </body>
