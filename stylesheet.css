@@ -1,35 +1,83 @@
 @import url('http://fonts.cdnfonts.com/css/brandon-grotesque-regular');
+
+  /*GENERAL CSS */ 
+html {
+  font-family: "brandon-grotesque", sans-serif;
+  
+  scroll-behavior: smooth;
+}
+
 body {
     margin:0;
     user-select:none;
     font-family: "brandon-grotesque", sans-serif;
 }
-
-/* width */
+/* SCROLLBAR */
 ::-webkit-scrollbar {
   width: 9px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
   background-color: rgba(1,1,1,255); 
 }
  
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background: rgba(212, 175, 55, 0.8);
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(212, 175, 55, 1); 
 }
 
+a {
+  text-decoration: none; 
+  color: #000000;
+
+}
+
+/* welcome page */
 .jxlogo123 {
   position: fixed;
   width:15%;
   height:10%;
 }
+
+.text1 {
+  color: #777;
+  background-color:white; 
+  text-align:center;
+  text-align: justify;
+}
+
+
+.text2 {
+  width:44%;
+  height:auto;
+  margin-left: 30%;
+  margin-top: 9rem;
+  font-size: 20px;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  font-style: italic;
+  text-transform: lowercase;
+  background-color:rgba(160, 160, 160, 0.7);
+}
+
+.text2 > span {
+  color: whitesmoke;
+}
+
+.text3 {
+  color: black;
+  background-color:rgba(212, 175, 55, 0.8);;
+  padding:20px 50px; 
+  font-size: 20px;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  font-style: italic;
+  font-family: "brandon-grotesque", sans-serif;
+}
+
 
 .img1, .img2, .img3 {
   position: relative;
@@ -48,7 +96,7 @@ body {
 
 .img2{
   background-image: url("imgs/img-welcome11.jpg");
-  min-height: 60%;
+  min-height: 50%;
 }
 
 .img3{
@@ -56,125 +104,101 @@ body {
   min-height: 100%;
 }
 
-/* start neon text */
-.neon {
-  color: #fff;
-  text-shadow:
-    0 0 5px #fff,
-    0 0 10px #fff,            /* TOO LAGGY */
-    0 0 20px #fff,
-    0 0 40px #0ff,       /* REMOVED NEON WELCOME TEXT*/
-    0 0 80px #0ff,
-    0 0 90px #0ff,           /* !! CHECK LATER !! */
-    0 0 100px #0ff,          
-    0 0 150px #0ff;
-}                              
-
-/* end neon text */
-
-.text1 {
-  color: #777;
-  background-color:white; 
-  text-align:center;
-  text-align: justify;
+#bestprices-categ, #shipping-return-categ {
+  width: 100%;
+  height: 100%;
+  display: contents;
 }
 
-.text2 {
-  position: relative;
-  top:200px; /*top:200px; right:7%; for higher res*/
-  right:85px;
+.br-bigscreens {
+  display: none;
 }
 
-.text3 {
-  color: #777;
-  background-color:black;
-  text-align:center; 
-  padding:20px 50px; 
-  text-align: justify;
+.sr-text > h2, .bp-text > h2 {
+  border-left: 3px solid rgba(212, 175, 55,1) ;
+  padding-left: 10px;
 }
 
-.sidekick {
-  display:none;
-  position: absolute;
-  top:250px;
-  right:100px;
-  padding-left: 1em;
-  border-left: 0.2em solid white; 
-  border-right: 0.2em solid white;              /*quote in mainpage */
-  padding-right: 1em;
-  font-family: 'Courier New', monospace; 
-  color:WHITE;
-  font-size: 2.4em;
-  line-height: 1.5em;
-  font-weight: 100;
+.sr-text {
+  width:90%;
+  margin-left:5%;
+  font-family: "brandon-grotesque", sans-serif;
 }
 
-
-.sidekick3 {
-  position: relative;
-  top:90px; /*top:90px; left:28%; */
-  left:380px;
-  font-family: Georgia, serif;
-  font-size: 27px;
-  letter-spacing: 2px;
-  word-spacing: 2px;
-  font-style: italic;
-  font-variant: small-caps;
-  text-transform: lowercase;
-  float:left; background-color:white
+.bp-text{
+  width:90%;
+  margin-left:5%;
+  margin-top:5%;
+  font-family: "brandon-grotesque", sans-serif;
 }
 
-@media only screen and (min-width: 600px) {
-  .text123{
+.bp-text p, .sr-text p{
+  font-family: "brandon-grotesque", sans-serif;
+}
+
+.bp-image, .sr-image{
+  overflow: hidden;
+  width:100%;
+  max-height:60%;
+  margin-right:10%;
+}
+
+.bp-image img, .sr-image img{
+  width:100%;
+}
+@media screen and (min-width:800px){
+.jxlogo123 {
     width:10%;
-    height:15%;
+    height:10%;
+    }
+}
+
+@media screen and (min-width:900px){
+  
+  .bp-text, .sr-text{
+    width:40%;
+    float:left;
   }
-  .sidekick {
+
+  #bestprices-categ, #shipping-return-categ {
+    display:contents;
+  }
+
+  .br-bigscreens {
     display:block;
   }
+  /* #shipping-return-categ {
+    margin-top:-20%;
+  } */
 
+  .sr-image { 
+    margin-left:2%;
+    float:right;
+    width:43%;
+    height: auto;
+  }
+
+  .bp-image{
+    margin-left:2%;
+    margin-top:5%;
+    float:right;
+    width:43%;
+    height: auto;
+  }
+  .bp-image img, .sr-image img {
+    width:100%;
+  }
+  }
+
+
+  @media screen and (min-width:1200px){
+    #bestprices-categ, #shipping-return-categ {
+      font-size: 18px;
+  }
 }
-
-
-
-
-/*   Sign up now ! */
-
-.btn {
-  margin: 20px auto;
-  border: none;
-  padding: 10px 44px;
-  font-size: 36px;
-  position: relative;
-}
-.btn::before {
-  transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  content: "";
-  width: 55%;
-  height: 100%;
-  background: black;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.btn .btn-text {
-  color: white;
-  mix-blend-mode: difference;
-}
-.btn:hover::before {
-  background: black;
-  width: 100%;
-}
-
-
 /* finish mainpage now ! */
 
 
-a {
-  text-decoration: none; 
-  color: #000000;
-
-}
 
 
 

@@ -14,7 +14,7 @@
     }
 </style>
 </head>
-<body style="background-color:black;">
+<body>
 <div class="footer-body">    
     <div class="footer-support">
     <h2>SUPPORT</h2>
