@@ -128,6 +128,9 @@
 <br class="br-bigscreens"><br class="br-bigscreens"><br class="br-bigscreens">
 <br class="br-bigscreens"><br class="br-bigscreens"><br class="br-bigscreens">
 
+<!-- MAYBE IF STILL MORE TIME ADD CUSTOMER REVIEWS HERE ! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+
 
 <div style="background-color:black; width:100%;">
 <?php include '../web3x/footer.php'; ?>
@@ -137,16 +140,7 @@
 <!-- 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <div class="img3">
-    <div>
-        <h1>
-            TO BE ADDED 
-            <br>
-            SLIDE SHOW 
-            <br>
-            OF TOP ITEMS
-            <br> WAITING FOR DB TO BE BUILT.
-        </h1>
-    </div>
+    maybe customer reviews later
 </div> -->
 
 
