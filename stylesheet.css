@@ -3,7 +3,6 @@
   /*GENERAL CSS */ 
 html {
   font-family: "brandon-grotesque", sans-serif;
-  
   scroll-behavior: smooth;
 }
 
@@ -816,6 +815,101 @@ hr {
 
 /* END STORE ITEMS . PHP */
 
+/* START PRODUCT DETAILS !!! */
+
+
+#images-left {
+  width: 45%;
+  float:left;
+  display: flexbox;
+}
+
+.rrrr {
+  font-family: "brandon-grotesque", sans-serif;
+}
+#prodetails-right {
+
+  width:45%;
+  float:right;
+}
+
+.img-display{
+  overflow: hidden;
+}
+
+.img-showcase{
+  display:flex;
+  width:100%;
+  transition: all 0.5s ease;
+}
+
+.img-showcase img {
+  min-width:100%;
+}
+
+.img-select{
+  display:flex;
+  width:100%;
+}
+
+@media screen and (max-width:800px) {
+  #prodetails-right{
+    float:none;
+    margin-left:25%;
+  }
+  
+  #images-left{
+    width:100%; height:auto;
+  }
+}
+
+.img-item{
+  width:100%;
+  margin: 0.3rem;
+}
+.img-item img {
+  width:100%;
+}
+
+
+.img-item:hover{
+  opacity:0.8;
+}
+
+
+/* toggle button*/
+.toggleRow {
+  display: none;
+}
+
+.toggle-readmore {  
+  cursor: pointer;
+}
+
+.toggle-readmore .title-text {
+  float:left;
+  font-size:18px;
+  font-weight: bold;
+  display: inline;
+}
+
+.toggle-readmore .arrow .close {
+  font-size: 25px;
+  transition: transform 500ms ease-in-out;
+}
+
+.toggle-readmore .arrow.closetoggle > .close {
+  transform: rotate(eg); 
+}
+
+.toggle-readmore .arrow .close {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+/* END PRODUCT DETAILS */
 
 
 
