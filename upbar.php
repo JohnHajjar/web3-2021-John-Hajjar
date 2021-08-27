@@ -12,7 +12,7 @@
 
 
 <div class="upbar" style="background-color:black;">
-    <a href="../welcomepage.php"> 
+    <a href="../"> 
         <img src="../imgs/whitejxlogo.jpg" width="55px" height=50px style="margin: 10px;">
     </a>
     
