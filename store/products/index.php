@@ -135,7 +135,7 @@
                 </table>
           <br><br>
             <div class="addtocart-div">
-                <button class="addtocart-btn"> ADD TO CART </button>
+                <button class="addtocart-btn" onclick> ADD TO CART </button>
             </div>
         <br><br>
         <hr>

@@ -819,7 +819,7 @@ hr {
 
 
 #images-left {
-  width: 42%;
+  width: 45%;
   float:left;
   display: flexbox;
 }
@@ -834,6 +834,7 @@ hr {
   width:45%;
   float:right; 
   margin-right: 5%;
+  padding-bottom: 5%;
 }
 
 #prodetails-right h1,#prodetails-right h2, #prodetails-right h3, #prodetails-right h4 {
@@ -857,6 +858,10 @@ hr {
 .img-select{
   display:flex;
   width:100%;
+}
+
+.prodprice {
+  margin-bottom: -10px;
 }
 
 .table-productpage td {
