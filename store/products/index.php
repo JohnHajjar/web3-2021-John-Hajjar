@@ -13,9 +13,10 @@
 
     </head>
     <body class="body-productinfo">
-        <?php if (empty($_POST["prodid"]) || !isset($_POST["prodid"]))
-                { header('Location: ../');  }
+         <?php if (empty($_POST["prodid"]) || !isset($_POST["prodid"]))
+               { header('Location: ../');  }
          ?>
+
     <?php include '../../db.php'; ?>
         <?php include '../../upbar.php'; ?>   
 
@@ -135,7 +136,11 @@
                 </table>
           <br><br>
             <div class="addtocart-div">
-                <button class="addtocart-btn" onclick> ADD TO CART </button>
+                <form action="insertcart/" method="post">
+                <input type="hidden" name="prodid" value="<?php echo $productID ?>">
+                <input type="submit" name="addtc" class="addtocart-btn" value="ADD TO CART">
+                </form>
+
             </div>
         <br><br>
         <hr>

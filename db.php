@@ -109,7 +109,7 @@ if (isset($_POST['loginbtn'])) {
                 $_SESSION['status'] = 'logged_in';
                 $message = 'You are logged in' ;
                 echo '<script>alert("'.$message.'")</script>' ;
-                header("Location: storepage.php");
+                header("Location: /web3x/store");
             } else {
                 $errors['wrongpass'] = 'The password that you typed is incorrect.'; 
                 echo $errors['wrongpass'];

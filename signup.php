@@ -73,9 +73,23 @@
                 <input type="submit" name="signupbtn" id="signupbtn" class="submitformsignup" value="Sign up" required>
                 </td>
             </tr>
+            <tr>
+                <td colspan="2">
+                Already have an account ?
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button class="submitformsignup">
+                    <a href="login.php">
+                        Log In
+                    </a>
+                    </button>
+                </td>
+            </tr>
         </table>
     </form>
-
+<br><br><br><br><br><br><br><br><br>
 </div>
 
 

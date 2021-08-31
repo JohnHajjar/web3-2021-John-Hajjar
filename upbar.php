@@ -1,47 +1,112 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" type="text/css" href="stylesheet.css"/>
-</head>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/a0043d9bc2.js" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="jquery-comp-3.6.js"></script>
+        <link href="http://fonts.cdnfonts.com/css/brandon-grotesque-regular" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+    </head>
+    <body>
+        <?php error_reporting(0); ?>
+        <?php include 'db.php' ?>
 
-<body style="width:100%; height:auto;">
+        <nav>
+            <div class="logo">
+                <a href="../">
+                    <img src="/web3x/imgs/whitejxlogo.jpg"  width="55px" height=50px style="margin: 10px;">
+                </a>
+            </div>
+            <div class="hamburger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-links">
+                <li>
+                    <?php 
+                        if(!isset($_SESSION['status']) && empty($_SESSION['status'])) {
+                   ?>   <a class="a-button" href="/web3x/" >
+                            <div class="button" id="button-5">
+                                <div id="translate"></div>
+                                Home
+                            </div>
+                        </a>
+                <?php } 
+                        if($_SESSION['status'] == 'logged_in' ) {
+                   ?>   <a class="a-button" href="/web3x/store" >
+                            <div class="button" id="button-5">
+                                <div id="translate"></div>
+                                Store
+                            </div>
+                        </a>
+                <?php } ?>
+                    
+                </li>
+                <li>
+                    <?php 
+                        if($_SESSION['status'] == 'logged_in') {
+                    ?>      <a class="a-button" href="/web3x/cart">
+                                <div class="button" id="button-6">
+                                    <div id="spin"></div>
+                                    Cart
+                                </div>
+                            </a>
+                    <?php    }
+                        else { ?>
+                            <a class="a-button" href="/web3x/signup.php">
+                                <div class="button" id="button-6">
+                                    <div id="spin"></div>
+                                    Join Us
+                                </div>
+                            </a>
+                    <?php    } ?>
 
-  <?php $current_file_name = basename($_SERVER['PHP_SELF']);  ?>
 
 
-<div class="upbar" style="background-color:black;">
-    <a href="../"> 
-        <img src="../imgs/whitejxlogo.jpg" width="55px" height=50px style="margin: 10px;">
-    </a>
-    
-<div class="upbar2">
-    <div class="button" id="button-5">
-        <div id="translate"></div>
-     
-        <?php if ($current_file_name == 'signup.php') { ?>
-                <a class="a-button" href="login.php"> Login </a>
-        <?php  } else if($current_file_name == 'login.php') {?>
-                <a class="a-button" href="signup.php"> Sign up </a>
-        <?php } else {?>
-                <a class="a-button" href=""> Cart </a>
-        <?php } ?>
-    </div>
-
-    <div class="button" id="button-6">
-        <div id="spin"></div>
-        <a class="a-button" href="\..\web3x\index.php"> About Us </a>
-    </div>     
-        
-    <div class="button" id="button-5">
-        <div id="translate"></div>
-        <a class="a-button" href="#">Policy</a>
-    </div>
-</div>
-
-</div>
+                </li>
+                <li>
+                    <?php
+                        if($_SESSION['status'] == 'logged_in') {
+                    ?>      <a class="a-button" href="/web3x/profile">
+                               <div class="button" id="button-5">
+                                <div id="translate"></div>
+                                My Profile
+                            </div>           
+                            </a>
+                    <?php  } else { ?>
+                            <a class="a-button" href="/web3x/contact.php">
+                               <div class="button" id="button-5">
+                                <div id="translate"></div>
+                                Contact US
+                            </div>           
+                            </a>
+                  <?php } ?>
+                </li>
+            </ul>
+        </nav>
 
 
+
+
+        <script>
+            const hamburger = document.querySelector(".hamburger");
+            const navLinks = document.querySelector(".nav-links");
+            const links = document.querySelectorAll(".nav-links li");
+
+            hamburger.addEventListener('click', ()=>{
+            //Animate Links
+                navLinks.classList.toggle("open");
+                links.forEach(link => {
+                    link.classList.toggle("fade");
+                });
+
+                //Hamburger Animation
+                hamburger.classList.toggle("toggle");
+            });
+
+        </script>
 </body>
+
 </html>

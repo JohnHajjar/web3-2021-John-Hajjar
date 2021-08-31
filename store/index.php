@@ -16,7 +16,7 @@
             <?php include '../db.php'; ?>
             <?php include '../upbar.php'; ?>
             <br><br>
-
+        <div class="storep-withmargin">
             <div style=" width:70%; margin:auto;">
                 <h1 align=center style="color:white; font-family: Neoneon,sans-serif; font-size: 60px; line-height: 1.3em; font-weight: 400;">
                     Welcome to JEWXRLY store
@@ -66,7 +66,7 @@
                             <h2>MEN'S SECTION </h2>
                         </div>
                         <div class="smscreen-men">
-                            <h2> MEN'S SECTION </h2>
+                            <h3> MEN'S SECTION</h3>
                         </div>
                     </div>
                 </a>
@@ -77,7 +77,7 @@
                             <h2> WOMEN'S SECTION </h2>
                         </div>
                         <div class="smscreen-women">
-                            <h2>WOMEN'S SECTION </h2>    
+                            <h3>WOMEN'S SECTION</h3>    
                         </div>
                     </div>
                 </a>
@@ -88,7 +88,7 @@
                             <h2>UNISEX SECTION</h2>
                         </div>
                         <div class="smscreen-both"> 
-                            <h2>UNISEX'S SECTION</h2>
+                            <h3>UNISEX'S SECTION</h3>
                         </div>
                     </div>
                 </a>
@@ -137,7 +137,8 @@
                 <hr><?php include '../footer.php'; ?>
             </div>
             
-            <br>
+        </div>
+                 <br>
         <script>
             $('.carousel').carousel({
                     interval: 6000,

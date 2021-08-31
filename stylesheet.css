@@ -197,7 +197,135 @@ a {
 /* finish mainpage now ! */
 
 
+/* UPBAR 2.0 RESPONSIVEE*/
 
+nav{
+  height: 5rem;
+  width: 100vw;
+  background-color: black;
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+  display: flex;
+  position: fixed;
+  z-index: 10;
+}
+
+/*Styling Links*/
+.nav-links{
+  /*display: flex;*/
+  display:inline-flex;
+  list-style: none; 
+  width: 88vw;
+  padding: 0 0.7vw;
+  margin-left:7rem;
+ justify-content:space-evenly;   
+  align-items: center;
+  text-transform: uppercase;
+}
+.nav-links li a{
+  color:black;
+  text-decoration: none;
+  margin: 0 0.7vw;
+}
+.nav-links li a:hover {
+  color: black;
+}
+.nav-links li {
+  position: relative;
+}
+
+
+
+
+/*Styling Hamburger Icon*/
+.hamburger div{
+  width: 30px;
+  height:3px;
+  background: #f2f5f7;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+.hamburger{
+  display: none;
+}
+
+/*Stying for small screens*/
+@media screen and (max-width: 800px){
+  nav{
+      position: fixed;
+      z-index: 3;
+  }
+  .hamburger{
+      display:block;
+      position: absolute;
+      cursor: pointer;
+      right: 5%;
+      top: 50%;
+      transform: translate(-5%, -50%);
+      z-index: 2;
+      transition: all 0.7s ease;
+  }
+  .nav-links{
+      position: absolute;
+      background: black;
+      margin:0;
+      padding-top: 30%;
+      height: 100vh;
+      width: 100%;
+      flex-direction: column;
+       justify-content:unset;
+      clip-path: circle(50px at 90% -20%);
+      -webkit-clip-path: circle(50px at 90% -10%);
+      transition: all 1s ease-out;
+      pointer-events: none;
+  }
+  .nav-links.open{
+      clip-path: circle(1000px at 90% -10%);
+      -webkit-clip-path: circle(1000px at 90% -10%);
+      pointer-events: all;
+  }
+  .nav-links li{
+      opacity: 0;
+  }
+  .nav-links li:nth-child(1){
+      transition: all 0.5s ease 0.2s;
+  }
+  .nav-links li:nth-child(2){
+      transition: all 0.5s ease 0.4s;
+  }
+  .nav-links li:nth-child(3){
+      transition: all 0.5s ease 0.6s;
+  }
+  .nav-links li:nth-child(4){
+      transition: all 0.5s ease 0.7s;
+  }
+  .nav-links li:nth-child(5){
+      transition: all 0.5s ease 0.8s;
+  }
+  .nav-links li:nth-child(6){
+      transition: all 0.5s ease 0.9s;
+      margin: 0;
+  }
+  .nav-links li:nth-child(7){
+      transition: all 0.5s ease 1s;
+      margin: 0;
+  }
+  .nav-links li.fade{
+      opacity: 1;
+  }
+}
+/*Animating Hamburger Icon on Click*/
+.toggle .line1{
+  transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2{
+  transition: all 0.7s ease;
+  width:0;
+}
+.toggle .line3{
+  transform: rotate(45deg) translate(-5px,-6px);
+}
+ 
+/* FINISH UPBAR 2.0 */
 
 
 
@@ -206,7 +334,8 @@ a {
 .pagesignupcss {
   background-image:url(imgs/backgroundsignup.jpg);
   background-repeat: no-repeat;
-  background-size: cover
+  background-size: cover;
+  overflow:hidden;
 }
 
 
@@ -232,9 +361,15 @@ a {
   color:white;
 }
  .tablesignup {
+  margin-top: 15%;
   color:white; 
   padding:30px;  
   background-color: rgba(0, 0, 0, 0.61);
+ }
+ @media screen and (max-width:800px){
+   .tablesignup {
+     margin-top:30%;
+   }
  }
 
  .tablesignup tr {
@@ -296,6 +431,10 @@ a {
   background-image:url(imgs/3162421.jpg);
  /* background-repeat: no-repeat;*/
   background-size: contain; 
+}
+
+.storep-withmargin {
+  margin-top: 6rem;
 }
 /*
 .h2men {
@@ -511,10 +650,10 @@ hr {
   .smscreen-men, .smscreen-women, .smscreen-both {
     width:100%;
     height:100%;
-    display:contents;
+    display:contents; 
     position:relative;
     text-align: center;
-    font-size: 0.9rem;
+    font-size: 0.5rem; 
     font-family:monospace;
     color:rgba(212,175,55, 1);
 
@@ -1019,12 +1158,12 @@ hr {
     letter-spacing: 1px;
   }
 
-
+/*#BFC0C0*/
 .button {
     display: inline-flex;
     height: 40px;
     width: 150px;
-    border: 2px solid #BFC0C0;
+    border: 2px solid rgba(212, 175, 55, 0.8);
     margin: 20px 20px 20px 20px;
     color: #BFC0C0;
     text-transform: uppercase;
@@ -1055,7 +1194,7 @@ hr {
     height: 250%;
     left: -200px;
     top: -30px;
-    background: #BFC0C0;
+    background: rgba(212, 175, 55, 0.5);
     position: absolute;
     transition: all .3s ease-Out;
   }
@@ -1101,7 +1240,7 @@ hr {
     opacity: 1;
     left: -70px;
     top: -70px;
-    background: #BFC0C0;
+    background: rgba(212, 175, 55, 0.6);
     transform: rotate(80deg);
   }
   
