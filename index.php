@@ -19,8 +19,8 @@
     </p>
     <div id="div-bar">
 
-            <div class="button" id="button-6">
-            <div id="spin"></div>
+            <div class="button" id="button-6" style="border: 1px solid #777; color:white;">
+            <div id="spin" style="background-color:#777;"></div>
             <a class="a-button" href="../web3x/signup.php">Join us !</a>
             </div>
 

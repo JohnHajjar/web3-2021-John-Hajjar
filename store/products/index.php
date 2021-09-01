@@ -136,12 +136,36 @@
                 </table>
           <br><br>
             <div class="addtocart-div">
-                <form action="insertcart/" method="post">
+           <!--     <form action="insertcart/" method="post">  $_POST["prodid"]-->
+                <form method="post">
                 <input type="hidden" name="prodid" value="<?php echo $productID ?>">
+                <p align=center> Quantity <input type="text" name="quantity" value="1" style="width:15px;"> </p>
                 <input type="submit" name="addtc" class="addtocart-btn" value="ADD TO CART">
                 </form>
-
             </div>
+
+            <?php 
+       if(isset($_POST['addtc'])){
+           if (!isset($_SESSION['ID']) || empty($_SESSION['ID']))
+           {
+               echo '<p align=center> Error : You must sign in to be able to add to your cart. </p>';
+           }
+           else if ($instock < $_POST['quantity']){
+                echo '<p align=center> Error : Insuffisent stock. </p>';
+           }
+           else {
+        $sqladdtocart = "INSERT INTO `cart`(`IDuser`, `IDproduct`, `Quantity`) VALUES ('".$_SESSION['ID']."','".$_POST['prodid']."', '".$_POST['quantity']."')"; 
+        $resaddtocart = mysqli_query($conn,$sqladdtocart);
+            if($resaddtocart) {
+               echo '<p align=center> Successful : The item was added to your cart. </p>';
+            }
+            else { echo '<p align=center> Error : Please try again later. </p>';} 
+            }
+    }
+            ?>
+
+
+
         <br><br>
         <hr>
                     <h3 align=center> Description & Details. </h3>
