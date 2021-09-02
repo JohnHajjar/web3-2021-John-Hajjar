@@ -1135,7 +1135,132 @@ hr {
 
 /* END PRODUCT DETAILS */
 
+/* START MY PROFILE */
+.myprofile {
+  position: absolute;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  /* background-color: rgba(212, 175, 55,1); */
+  background-color: black;
+  color:white;
+  width:60%; height:auto;
+  margin-left:20%;
+  margin-top: 10%;
 
+} 
+
+.col-xl-8 {
+  
+  position: relative;
+  width: 90%;
+  /* margin-top: 5%; */
+  min-height: 1px;
+  padding-right: 5%;
+  padding-left: 5%;
+}
+
+@media screen and (max-width:900px){
+  .col-xl-8 {
+    margin-top: 5%; 
+    }
+  } 
+
+@media screen and (max-width:700px){
+  .col-xl-8 {
+    margin-top: 10%; 
+    }
+  } 
+  
+@media screen and (max-width:600px){
+  .col-xl-8 {
+    margin-top: 20%; 
+    }
+  } 
+
+@media screen and (max-width:400px){
+  .col-xl-8 {
+    margin-top: 40%; 
+    }
+  } 
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  min-width: 0;
+  word-wrap: break-word;
+  border-radius: .475rem;
+  padding-bottom: 20px;
+  /* background-color: #fff; */
+  background-color: black;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, .05);
+  box-shadow: 0 0 2rem 0  rgba(212, 175, 55,1) !important;
+}
+
+
+.card-header {
+  margin-bottom: 0;
+  padding: 1.25rem 1.5rem;
+  border-bottom: 1px solid rgba(0, 0, 0, .05);
+  /* background-color: #fff; */
+  background-color: black;
+   border: 0 !important;
+}
+
+.row {
+  display: flex;
+  margin-right: -15px;
+  margin-left: -15px;
+  flex-wrap: wrap;
+  align-items: center !important;
+}
+
+
+.pers-text{
+  margin-top:-2%;
+}
+
+.myprofile-input{
+  text-align: center;
+  width:100px;
+  color:black;
+  border: 0px;
+
+}
+
+.myprofile-input[disabled]{
+  color:white;
+  background-color: transparent;
+  border: 1px solid rgba(212, 175, 55,1);
+}
+
+.myprofile-btn{
+  color:white;
+  background-color: black;
+  border: 1px solid rgba(212, 175, 55,1);
+  width:150px;
+  padding:10px;
+  height: auto;
+  transition: 0.5s ease-in;
+}
+
+.myprofile-btn:hover{
+  cursor:pointer;
+  background-color: rgba(212, 175, 55,1);
+  border: 1px solid black;
+  color:black;
+}
+
+.myprofile-form{
+  display: grid; 
+  align-items:center;
+  justify-items: center;
+}
+/* END MY PROFILE */
 
 
 /*START BUTTON ANIMATION*/
