@@ -62,11 +62,14 @@ $sqlec = "SELECT * FROM userinfo WHERE Email='$email' LIMIT 1";
 //Check if array $errors is empty --> if yes then add to db
 if (count($errors) === 0 ){
     $sql= "INSERT INTO userinfo (FullName, Username, Pnumber, Email, Password) 
-        VALUES('".$fullname."','".$username."','".$pnumber."','".$email."','".$password."')";
+        VALUES('".$fullname."','".$username."','".$phonenumber."','".$email."','".$password."')";
      $result = mysqli_query($conn,$sql);
+
    if ($result){
         $_SESSION['username'] = $username;
         $_SESSION['pnumber'] = $phonenumber;
+        $sqluserdetails = "INSERT INTO userdetails (ProfileVisit) VALUES (0)";
+        $resuserdetails = mysqli_query($conn,$sqluserdetails);
         header("Location: login.php");
      } else {
       $errors['db'] = 'Database error : Could not register user'; 

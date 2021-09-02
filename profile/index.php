@@ -20,6 +20,40 @@
                     TO A NEW DB TABLE CALLED USERDETAILS
                     ADD A CHANGE PASSWORD
                     ADD A LOGOUT BUTTON -->
+            <?php 
+                //get userdetails and userinfo
+                $sql1 = "SELECT * FROM userinfo WHERE ID = '".$_SESSION['ID']."'";
+                $res1 = mysqli_query($conn,$sql1);
+                $sql2 = "SELECT * FROM userdetails WHERE ID = '".$_SESSION['ID']."'";
+                $res2 = mysqli_query($conn,$sql2);
+
+                $res1arr = mysqli_fetch_row($res1);
+                $res2arr = mysqli_fetch_row($res2);
+                $displaymessage = '';
+
+                if ($res2arr[1] == 0){
+                    $displaymessage = 'Welcome '.$res1arr[1] .'. <br> 
+                    This is your profile, please fill out the empty fields.
+                    Remember that you can edit everything later on.';
+                } else {
+                    $displaymessage = 'Welcome back '.$res1arr[1]. ' !';
+
+                }
+
+                //UPDATE MYPROFILE VISITS
+                $res2arr[1]++;
+                $sqlvisits = "UPDATE userdetails SET ProfileVisit='".$res2arr[1]."' WHERE IDuser ='".$_SESSION['ID']."'";
+                $ressqlvisits = mysqli_query($conn,$sqlvisits);
+
+
+        ?>
+            
+            <!-- Personal info category  -->
+
+            <!-- Location -->
+
+
+
             <form method="post">
                 <input type="submit" name="logout-btn" value="Log Out">
             </form>
