@@ -150,6 +150,9 @@
            {
                echo '<p align=center> Error : You must sign in to be able to add to your cart. </p>';
            }
+           else if($_POST['quantity'] === 0){
+               echo '<p align=center> Error: 0 is not an acceptable value.</p>';
+            }
            else if ($instock < $_POST['quantity']){
                 echo '<p align=center> Error : Insuffisent stock. </p>';
            }

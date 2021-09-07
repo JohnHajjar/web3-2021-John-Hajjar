@@ -20,12 +20,12 @@
     <div id="div-bar">
 
             <div class="button" id="button-6" style="border: 1px solid #777; color:white;">
-            <div id="spin" style="background-color:#777;"></div>
+            <div id="spin" style="background-color: #777"></div>
             <a class="a-button" href="../web3x/signup.php">Join us !</a>
             </div>
 
-            <div class="button" id="button-5">
-                <div id="translate"></div>
+            <div class="button" id="button-5" style="border: 1px solid #777; color:white;">
+                <div id="translate" style="background-color:#777;"></div>
                 <a class="a-button" href="store/">Shop now!</a>
             </div>
     </div> 
