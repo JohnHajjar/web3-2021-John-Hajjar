@@ -1266,11 +1266,11 @@ hr {
 /* START CART PAGE */
 
 .body-cart{
+  width:100%;
   background-color: black;
   color:white;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-weight: lighter;
-  overflow: scroll;
 }
 
 .table-cart{
@@ -1335,6 +1335,9 @@ hr {
 .cart-vals:hover{
   color:white;
 }
+
+
+
 /* END CART PAGE */
 
 /*START BUTTON ANIMATION*/

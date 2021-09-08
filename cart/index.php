@@ -7,6 +7,7 @@
         <script type="text/javascript" src="../jquery-comp-3.6.js"></script>
         <link href="http://fonts.cdnfonts.com/css/brandon-grotesque-regular" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="../stylesheet.css"/>
+
     </head>
     <body class="body-cart">
         <?php include '../db.php'; ?>
@@ -87,10 +88,17 @@
             echo '<div class="checkout-div">';
             echo '<p align=center>Proceed to checkout <br> <span class="cart-vals"> '.$counterc1.' </span> items with a total of <span class="cart-vals"> $'
             .$totalcheckout.' </span><br><br> </p>' ; 
-            echo '<button name="checkout" class="checkout remove-btn" value="Checkout"> Checkout </button>';
-            echo '</div>';
-           ?>
+            echo '<button onclick="document.getElementById(\'cartinfo\').style.display = document.getElementById(\'cartinfo\').style.display == \'none\' ? \'block\' : \'none\'; return false;" name="checkout" class="checkout remove-btn" value="Checkout"> Checkout </button>';
+            // echo '<iframe id="frame" src="cartinfo.php" style="width: 100%; height:50%; display:none;" allowfullscreen="true" frameborder="0"></iframe>'; 
+           echo '<br><br><br>';
+           echo '<div id="cartinfo" style="display:none; width=50% overflow:hidden;">';
+           include 'cartinfo.php';
+           echo '</div>';
             
+            echo '</div>';
+
+
+                ?>
 
 
     <?php } ?>
@@ -111,10 +119,12 @@
 
 
     <script>
+
+
         $(".remove").click(function(){
         var prodid = $(this).attr("value");
-    var quantity= $(".quantity").text();
-    var action = 'remove';
+        var quantity= $(".quantity").text();
+        var action = 'remove';
 
         if(confirm("Are you sure you want to remove this product?"))
         {
@@ -133,6 +143,10 @@
             return false;
         }
     });
+
+        $(".checkout").click(function(){
+            var 
+        });
 
     </script>
 
