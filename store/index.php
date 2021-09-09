@@ -66,7 +66,7 @@
                             <h2>MEN'S SECTION </h2>
                         </div>
                         <div class="smscreen-men">
-                            <h3> MEN'S SECTION</h3>
+                            <h4> MEN SECTION</h4>
                         </div>
                     </div>
                 </a>
@@ -77,7 +77,7 @@
                             <h2> WOMEN'S SECTION </h2>
                         </div>
                         <div class="smscreen-women">
-                            <h3>WOMEN'S SECTION</h3>    
+                            <h4>WOMEN SECTION</h4>    
                         </div>
                     </div>
                 </a>
@@ -88,7 +88,7 @@
                             <h2>UNISEX SECTION</h2>
                         </div>
                         <div class="smscreen-both"> 
-                            <h3>UNISEX'S SECTION</h3>
+                            <h4>UNISEX SECTION</h4>
                         </div>
                     </div>
                 </a>

@@ -81,7 +81,7 @@
             <tr>
                 <td colspan="2">
                     <button class="submitformsignup">
-                    <a href="login.php">
+                    <a href="login.php" style="color:white;">
                         Log In
                     </a>
                     </button>

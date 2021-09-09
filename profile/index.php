@@ -31,7 +31,7 @@
                 $res2arr = mysqli_fetch_row($res2);
                 $displaymessage = '';
                 
-            
+ 
                 if ($res2arr[1] == 0){
                     $displaymessage = 'Welcome '.$res1arr[1] .'. <br> 
                     This is your profile, please fill out the empty fields. <br>
@@ -211,7 +211,7 @@
              {
                 //change password     
                 $newpassword = password_hash($_POST['newpass'], PASSWORD_DEFAULT);
-                $sql11 = "UPDATE userinfo SET Password='".$password."' ";
+                $sql11 = "UPDATE userinfo SET Password='".$newpassword."' WHERE ID='".$_SESSION['ID']."'";
                 $res11 = mysqli_query($conn,$sql11);
                 echo '<script>alert("Password changed !")</script>';
              } else {

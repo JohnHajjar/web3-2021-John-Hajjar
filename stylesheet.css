@@ -335,17 +335,14 @@ nav{
   background-image:url(imgs/backgroundsignup.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  overflow:hidden;
+  /* overflow:hidden; */
 }
-
 
 
 .upbar2 {
  float: right;
 
 }
-
-
 
 .middlepage {
   font-family: 'Courier New', monospace; 
@@ -377,8 +374,8 @@ nav{
  }
 
 .submitformsignup {
-  background: #fc636b;
-    border: none;
+  background: rgba(212,175,55, 0.8);
+    border: 1px solid black;
     color: #fff;
     padding: 11px 15px;
     text-transform: uppercase;
@@ -388,6 +385,13 @@ nav{
     margin-top: 10px;
     letter-spacing: 2px;
     cursor: pointer;
+    transition: 0.5s ease-in;
+}
+
+.submitformsignup:hover {
+  background: black;
+  color: rgba(212,175,55, 0.8);
+  border: 1px solid rgba(212,175,55, 0.8);
 }
 
 
@@ -436,63 +440,7 @@ nav{
 .storep-withmargin {
   margin-top: 6rem;
 }
-/*
-.h2men {
-  margin-left:10%; 
-  width:35%; 
-  height:60%;
-  background-color: rgba(20, 170, 163, 0.4); 
-  border: 4px solid rgba(212, 175, 55, 0.6);
-  float:left;
-}
 
-.h2women {
-  margin-right:10%; 
-  width:35%; 
-  height:60%;
-  border: 4px solid rgba(212, 175, 55, 0.6);
-  background-color: rgb(183, 110, 121, 0.4);
-  float:right;
-}
-
-.h2both {
-  width:35%; 
-  height:60%;
-  float:right;
-  margin-right: 32%;
-  border: 4px solid rgba(212, 175, 55, 0.6);
-  background: linear-gradient(to left, rgba(20, 170, 163, 0.4) 50%, rgb(183, 110, 121, 0.4) 50%); 
-}
-
-.h2men:hover {
-  animation: selectcategory 1.4s reverse forwards; 
-}
-
-.h2both:hover {
-  animation: selectcategory 1.4s reverse forwards; 
-}
-
-.h2women:hover {
-  animation: selectcategory 1.4s reverse forwards;
-}
-
-@keyframes selectcategory {
-  0%{
-     transform : scale(0.95)
-  }
-  50%{
-      transform : scale(1.05);
-  }
-  100%{
-    transform : scale(1.1);
-  }
-}
-
-.expmore {
-  color : goldenrod;
-  font-size: small;
-}
-*/
 hr {
   opacity:1; border:2; color:white;
 }
@@ -577,6 +525,8 @@ hr {
   transition: transform 2s ease;
 }
 
+
+
 .categmen img {
   width:100%;
   height:auto;
@@ -653,8 +603,8 @@ hr {
     display:contents; 
     position:relative;
     text-align: center;
-    font-size: 0.5rem; 
     font-family:monospace;
+    font-weight: 20px;
     color:rgba(212,175,55, 1);
 
   }
@@ -662,13 +612,32 @@ hr {
   .categmen, .categwomen, .categboth{
     border: 2px solid whitesmoke;
     background-color: whitesmoke;
-    border-bottom-left-radius: 0.5rem;
-    border-bottom-right-radius: 0.5rem;
+    /* border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem; */
+    border-radius: 0.5rem;
   }
 
 }
+ 
+@media screen and (max-width:400px) {
+ /*  #section2, .categ-men, .categwomen, .categboth, .smscreen-men, .smscreen-women, .smscreen-both {
+    font-size: 30%;
+    font-weight: lighter;
+  }*/
+  .categmen, .categwomen, .categboth {
+    min-width:100%;
+  }
+  .categmen {
+    margin-left: -3%;
+  }
+  .categwomen{
+    margin-left:5%;
+  }
+  .categboth {
+    margin-left: 9%;
+  }
 
-
+} 
 
 
 
