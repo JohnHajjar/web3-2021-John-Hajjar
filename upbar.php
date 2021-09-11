@@ -84,6 +84,10 @@
                             </a>
                   <?php } ?>
                 </li>
+                <li>
+                    <br>
+                <input class="searchdiv"><div class="div1"></div></input>
+               </li>
             </ul>
         </nav>
 
