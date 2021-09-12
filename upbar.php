@@ -6,7 +6,7 @@
         <script src="https://kit.fontawesome.com/a0043d9bc2.js" crossorigin="anonymous"></script>
         <script type="text/javascript" src="jquery-comp-3.6.js"></script>
         <link href="http://fonts.cdnfonts.com/css/brandon-grotesque-regular" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+        <link rel="stylesheet" type="text/css" href="/web3x/stylesheet.css"/>
     </head>
     <body>
         <?php error_reporting(0); ?>
@@ -86,8 +86,13 @@
                 </li>
                 <li>
                     <br>
-                <input class="searchdiv"><div class="div1"></div></input>
-               </li>
+                    <form action="/web3x/search/" method="post" style="display:inline-block;">
+                        <input type="text" name="searchinput" id="searchinput" class="searchdiv">
+                        <input type="submit" name="submit" style="height: 0px; width: 0px; border: none; padding: 0px;" hidefocus="true" />
+                            <div class="div1"></div>
+                        </input>
+                    </form>
+                </li>
             </ul>
         </nav>
 
