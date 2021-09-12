@@ -65,18 +65,12 @@
                     echo '</div>';
                     echo '</div>';
             echo '<hr>';
-            echo '<h5 align=center style="color:white"> ( '. $itemscount .' ) Item(s) found.  </h5>';
+            echo '<h5 align=center style="color:white"> '. $itemscount .' Item(s) found.  </h5>';
             echo '<hr>';  
 
 
         }
     }?>
-
-        <!--- put post words in array -->
-        <!-- search for all products and keywords putting them in an array -->
-        <!--  -->
-
-
 
 
     </body>
