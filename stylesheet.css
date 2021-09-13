@@ -357,13 +357,6 @@ background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAA
   padding-left:40px;
   color:black;
 }
-/* 
-@media screen and (max-width: 950px){
-  .searchdiv:focus{
-      padding-left: 170px;
-      width:70px;
-    }
-  } */
 
 .searchdiv:hover,.searchdiv:focus
 {
@@ -1379,6 +1372,117 @@ hr {
 
 
 /* END CART PAGE */
+
+/* START ADMIN PAGE */
+
+.adm-page{
+  background-color:black;
+  color:white;
+}
+
+.hover-effect{
+  color:white;
+  transition: 0.2s ease-in-out;
+}
+
+.hover-effect:hover{
+  color: rgba(212, 175, 55, 0.9);
+}
+
+
+.admin-box {
+  width: 40%;
+  margin: -25px auto;
+  padding: 35px;
+  background-color: transparent;
+  text-align: center;
+}
+
+.admin-button {
+  font-size: 1em;
+  padding: 10px;
+  color: #fff;
+  border: 2px solid rgba(212, 175, 55, 0.8);
+  border-radius: 20px/50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.admin-button:hover {
+  color: rgba(212, 175, 55, 0.8);
+  border: 2.5px solid rgba(212, 175, 55, 1);
+}
+
+.admin-overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7); 
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.admin-overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.admin-popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 75%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.admin-content{
+  color:black !important;
+}
+
+.admin-popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.admin-popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.admin-popup .close:hover {
+  color: rgba(212, 175, 55, 1);
+}
+
+
+/* .admin-popup .admin-content {
+  max-height: 30%;
+  overflow: auto;
+} */
+
+/* @media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+} */
+
+
+
+
+
+/* END ADMIN PAGE*/
 
 /*START BUTTON ANIMATION*/
 

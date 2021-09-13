@@ -5,8 +5,10 @@ Things I NEED to do :
 4 --> ADMIN PANEL  + GOOGLE CHARTS //NEXT IMPORTANT !!
 
 
-6 --> Check my cart bug on phones + add paid table
-         in db for after checkout on cart // ON HOLD 
+6 --> TO CONTINUE CART : 
+        Check my cart bug on phones +
+            add paid table in db for after checkout on cart + 
+                UPDATE STOCK NUMBER WHEN CHECKOUT   // ON HOLD 
 
 
 Things MAYBE DO if free time left :
