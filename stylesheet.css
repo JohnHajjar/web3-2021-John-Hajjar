@@ -13,6 +13,7 @@ body {
 /* SCROLLBAR */
 ::-webkit-scrollbar {
   width: 9px;
+  height:5px;
 }
 
 ::-webkit-scrollbar-track {
@@ -1423,6 +1424,7 @@ hr {
   transition: opacity 500ms;
   visibility: hidden;
   opacity: 0;
+  overflow: auto;
 }
 
 .admin-overlay:target {
@@ -1442,6 +1444,8 @@ hr {
 
 .admin-content{
   color:black !important;
+  display:flexbox;
+  overflow:auto;
 }
 
 .admin-popup h2 {
@@ -1478,8 +1482,19 @@ hr {
   }
 } */
 
+.ahref-admin {
+  color:blue;
+  text-decoration: underline;
+  padding:10px;
+}
 
 
+.edit-section{
+ display:none;
+ color:black;
+ justify-content: center;
+ align-items: center;
+}
 
 
 /* END ADMIN PAGE*/
