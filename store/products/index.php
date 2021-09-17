@@ -40,7 +40,7 @@
         $sqlgetdetails = 'SELECT * FROM productdetails WHERE IDP='.$productID;
         $resgetdetails = mysqli_query($conn,$sqlgetdetails);
         while ($arr2 = mysqli_fetch_assoc($resgetdetails)){
-            $allimgsrc = explode("--IMG--", $arr2['Alt-Imgsrc']);
+            $allimgsrc = explode("--IMG--", $arr2['AltImgsrc']);
             $instock = $arr2['InStock'];
             $color = $arr2['Color'];
             $description = $arr2['Description'];
