@@ -17,9 +17,8 @@
             echo '<br><br><br>';
             if (isset($_POST['submit'])){
                 if (empty($_POST['searchinput'])){
-                    //header("Location: /web3x/store"); 
-                    echo $_POST['searchinput'];
-                    echo 'bye';
+                    header("Location: /web3x/store"); 
+                    //echo $_POST['searchinput'];
                 } else {
                     echo '<div class="searchwelc"><h2 align=center> Items for search <br> \' '.$_POST['searchinput'].' \'</h2></div>';
                     $itemscount = 0;

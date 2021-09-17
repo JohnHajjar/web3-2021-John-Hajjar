@@ -117,7 +117,7 @@
             </section>
 
             <br><br><br><br><br><br><br><br><br><br><br><br>
-            <section class="section4">
+            <section class="section4" id="bestsellers">
                 <hr>
                 <h1 style="color:white; letter-spacing:5px; font-family: Neoneon,sans-serif; color:white;" align=center>
                 BEST SELLERS </h1>

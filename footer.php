@@ -22,19 +22,19 @@
         <li>
             FAQ
         </li>
-        <li>
+        <li onclick="location.href='/web3x/'">
             Homepage
         </li>
-        <li>
+        <li onclick="location.href='/web3x/store'">
             Shopping
         </li>
-        <li>
+        <li onclick="location.href='/web3x/store#bestsellers'">
             Best-Sellers
         </li>
         <li>
             Reviews
         </li>
-        <li>
+        <li onclick="location.href='/web3x/contactus.php'">
             Contact Us
         </li>            
     </ul>
@@ -46,16 +46,16 @@
     <div class="footer-company">
         <h2>COMPANY</h2>
     <ul class="footer-list">
-        <li>
+        <li onclick="location.href='/web3x/aboutus.php'">
             About Us
         </li>
-        <li>
+        <li onclick="location.href='/web3x/ourteam.php'">
             Our Team
         </li>
-        <li>
+        <li onclick="location.href='/web3x/stores.php'">
             Stores
         </li>
-        <li>
+        <li onclick="location.href='/web3x/careers.php'">
             Careers
         </li>
     </ul>
