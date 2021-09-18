@@ -34,7 +34,7 @@
         <li>
             Reviews
         </li>
-        <li onclick="location.href='/web3x/contactus.php'">
+        <li onclick="location.href='/web3x/contactus'">
             Contact Us
         </li>            
     </ul>
@@ -46,13 +46,13 @@
     <div class="footer-company">
         <h2>COMPANY</h2>
     <ul class="footer-list">
-        <li onclick="location.href='/web3x/aboutus.php'">
+        <li onclick="location.href='/web3x/aboutus'">
             About Us
         </li>
         <li onclick="location.href='/web3x/ourteam.php'">
             Our Team
         </li>
-        <li onclick="location.href='/web3x/stores.php'">
+        <li onclick="location.href='/web3x/aboutus'">
             Stores
         </li>
         <li onclick="location.href='/web3x/careers.php'">

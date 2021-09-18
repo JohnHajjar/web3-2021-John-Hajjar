@@ -1530,6 +1530,49 @@ hr {
 
 /* END ADMIN PAGE*/
 
+/* START FOOTER STYLING PAGES */ 
+  
+  /*CONTACT US PAGE CSS */
+  .responsive-div{
+    width:100%;
+    height:auto;
+    display: grid;
+    align-items: center;
+    justify-content: center;    
+    color:white;
+  }
+
+
+
+
+/* END FOOTER STYLING PAGES*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*START BUTTON ANIMATION*/
 
 #div-bar {

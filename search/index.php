@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://kit.fontawesome.com/a0043d9bc2.js" crossorigin="anonymous"></script>
-        <script type="text/javascript" src="jquery-comp-3.6.js"></script>
+        <script type="text/javascript" src="../jquery-comp-3.6.js"></script>
         <link href="http://fonts.cdnfonts.com/css/brandon-grotesque-regular" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="/web3x/stylesheet.css"/>
     </head>

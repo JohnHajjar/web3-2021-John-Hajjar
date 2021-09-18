@@ -279,7 +279,7 @@
                 echo '<br><br>';
             echo '</div>';
 
-            //  echo '<script>window.scrollTo(1,document.body.scrollHeight); </script>';
+             echo '<script>window.scrollTo(0.5,document.body.scrollHeight); </script>';
 
         }
             
