@@ -49,34 +49,44 @@
             <hr> <h2 align=center class="hover-effect"> Pages modifications </h2><hr>
 
             <br>
-            <!-- <h5 align=center> Edit 'Contact Us' page.</h5> -->
-            <div class="admin-box" style="float:left;">
-                <a class="admin-button" href="#popup3">Contact Us</a>
+            <!-- <h5 align=center> Edit 'Contact Us' AND 'About US' pages.</h5> -->
+            
+            <h5 align=center class="hover-effect"> 
+                Here you can edit the information in ' Contact Us ' AND 'About Us'.
+            </h5>
+            <div class="admin-box">
+                <a class="admin-button" href="#popup3">Company details</a>
              </div>
             <br><br>
 
-             <!-- <h5 align=center> Edit 'About Us' page.</h5> -->
-             <div class="admin-box" style="float:right;">
-                <a class="admin-button" href="#popup4">About Us</a>
-            </div>
-            <br><br>
-
             <!-- <h5 align=center> Edit 'Our Team' page.</h5> -->
-             <div class="admin-box" style="float:left;">
+             <div class="admin-box" >
                 <a class="admin-button" href="#popup4">Our Team</a>
             </div>
             <br><br>
 
-            <!-- <h5 align=center> Edit 'Careers' page.</h5> -->
-             <div class="admin-box" style="float:right;">
-                <a class="admin-button" href="#popup4">Careers</a>
-            </div>
-            <br><br><br><br><br><br>
 
             <hr> <h2 align=center class="hover-effect"> Satistics + Graphs</h2><hr>
-            <!-- NUMBER OF SALES, SUM OF REVENU.
-                NUMBER OF MALE VS FEMALE PRODUCTS SOLD ETC... -->
+                <!-- NUMBER OF MALE VS FEMALE PRODUCTS SOLD ETC... -->
+                <!-- NUMBER OF TOTAL SALES + TOTAL REVENU -->
+                <div class="center-statistics">
+                    <h2 align=center>
+                        Total sales : <!-- echo count(*) table sales -->
+                    </h2>
+                    <h2 align=center>
+                        Total revenue : $ <!-- Total revenue in sales --> 
+                    </h2>
+                </div>
+            
+                <br><br>
+                <!-- Line chart with sales during the week -->
+                <div id="linechart_div"></div>
+                <br><br>
 
+                <!-- PIE chart 3 parts for each sex -->
+                    <div id="piechart" style="width: 100%; height:500px"></div>
+                <br><br>
+                <br><br>
 
 
             <div id="popup1" class="admin-overlay" >
@@ -174,6 +184,38 @@
                             
                         </form> 
                     </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="popup3" class="admin-overlay">
+                <div class="admin-popup">
+                    <h2 align=center> Company details </h2>
+                    <a class="close" href="#">&times;</a>
+                    <div class="admin-content">
+                        <br>
+                        <?php
+                        $sqlcomp = 'SELECT * FROM companydetails';
+                        $rescomp = mysqli_query($conn,$sqlcomp);
+                        $arr_rescomp = mysqli_fetch_row($rescomp);
+                        $compemail = $arr_rescomp[0];
+                        $compnumber = $arr_rescomp[1];
+                        $compdescrip = $arr_rescomp[2];
+                        $compstores = $arr_rescomp[3];
+                        ?>
+                            <form name="companydets" class="insert-form formadm" method="POST"> 
+                            <h5 align=center> --Company E-mail-- </h5>
+                            <input type="text" name="compemail" value="<?php echo $compemail; ?>">
+                            <h5 align=center> --Company number-- </h5>
+                            <input type="text" name="compnumber" value="<?php echo $compnumber; ?>">
+                            <h5 align=center> --Description-- </h5>
+                            <input type="text" name="compdescrip" value="<?php echo $compdescrip; ?>">
+                            <h5 align=center> --Stores location-- </h5>
+                            <small>Please seperate each location with '---' </small>
+                            <input type="text" name="compstores" value="<?php echo $compstores; ?>">
+                            <br><br>
+                            <button type="submit" name="updatecompdets"> Update </button>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -319,6 +361,26 @@
         }
 
 
+        if(isset($_POST['updatecompdets'])){
+            $CE = $_POST['compemail'];
+            $CN = $_POST['compnumber'];
+            $CD = $_POST['compdescrip'];
+            $CS = $_POST['compstores'];
+
+            $sqlupdatecomp = 'UPDATE companydetails SET CEmail="'.$CE.'", CPnumber="'.$CN.'",
+            CDescription="'.$CD.'", CStores="'.$CS.'" ';
+            $resupdatecomp = mysqli_query($conn,$sqlupdatecomp);
+
+            if ($resupdatecomp) {
+                echo '<script> alert("Details successfully updated !") </script>';
+                //header("Refresh:5");
+                //echo '<script> window.location.reload() </script>';
+            } else {
+                echo '<script> alert("An error has occurred.") </script>';
+            }
+               
+        }
+
 
         if (isset($_POST["action"])){
             if ($_POST["action"] == "remove-prod-adm"){
@@ -331,7 +393,6 @@
                     echo '<script>alert("Product successfully deleted.")</script>';
                 }
             }
-
         }
 
 
@@ -370,18 +431,70 @@
         }
         }
 
-        //  $(".edit-product").click(function(){
-        //     $("#tedit").attr("hidden",false);
-        //     var action = 'edit-prod-adm';
-        //     //var prodid = $(this).attr("value");
-        //          $.ajax({
-        //              url:"index.php",
-        //              method:"POST",
-        //              data:{'action':action},
-                     
-        //          })
+        $(window).resize(function(){
+        drawChart(); drawBasic();
+        });
+    </script>
     
-        //     });
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script>
+        google.charts.load('current', {packages: ['corechart', 'line']});
+google.charts.setOnLoadCallback(drawBasic);
+
+function drawBasic() {
+
+      var data = new google.visualization.DataTable();
+      data.addColumn('number', 'X');
+      data.addColumn('number', 'Sales');
+
+      data.addRows([
+        [1, 0], [2, 10], [3, 23], [4, 17], [5, 18], [6, 9], [7, 11], [8,5], [9,11], [10,18], [11,8],
+        [12,5], [13,2], [14,5]
+     ]);
+
+      var options = {
+        title: 'Sales in the past 14 days.',
+        hAxis: {
+          title: 'Day'
+        },
+        vAxis: {
+          title: 'Sa les'
+        }
+      };
+
+      var chart = new google.visualization.LineChart(document.getElementById('linechart_div'));
+
+      chart.draw(data, options);
+    }
+    </script>
+    
+    
+    
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['Men',     11],
+          ['Women',      7],
+          ['Unisex',  3]
+        ]);
+
+        var options = {
+          title: 'All time sales sorted by sex.',
+          colors: ['blue','red','green'],
+          pieStartAngle: 180,
+        };
+
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data, options);
+      }
     </script>
 
     </body>

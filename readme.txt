@@ -4,15 +4,17 @@ Things I NEED to do :
 
 
 1 --> ADD THE FOOTER A-HREFS + DB + TO ADMIN PANEL// ON IT 
-        //Finished : 20%
+        //Finished : 100%
 
 
-2 --> ADMIN PANEL + GOOGLE CHARTS //NEXT IMPORTANT !!
-            //Finished product management 
-        // Finished : 50%
+2 --> ADMIN PANEL + GOOGLE CHARTS //NOW  !!
+            //Finished product management
+            //Doing sales category 
+        // Finished : 75%
 
 
 3 --> TO CONTINUE CART : 
+        //make it cash on delivery
         Check my cart bug on phones +
             add paid table in db for after checkout on cart + 
                 UPDATE STOCK NUMBER WHEN CHECKOUT   // ON HOLD 

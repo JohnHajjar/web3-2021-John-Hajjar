@@ -287,6 +287,17 @@
                             Please pick your payment method. 
                         </h1>
                     </td>
+                </tr>
+                <tr align=center>
+                    <td>
+                        <button class="button-pay ondelivery-click">
+                            <img src="https://thumbs.dreamstime.com/b/delivery-service-icon-logo-dark-background-white-delivery-service-icon-logo-dark-background-132225950.jpg" width="20%">
+                            <h3>
+                                On Delivery
+                            </h3>
+                        </button>
+                    </td>
+                </tr>
                 <tr align=center>
                     <td>
                         <button class="button-pay card-click">
@@ -310,6 +321,31 @@
             </table>
 
         </div>
+
+        <div class="center-statistics cash-ondelivery">
+                <?php 
+                    echo '<p align=center>';
+                    echo '<br><br><br><br> Delivery to location : <br>';
+                    $sqllocation = 'SELECT * FROM userdetails WHERE IDuser="'.$_SESSION['ID'].'" ';
+                    $reslocation = mysqli_query($conn,$sqllocation);
+                    $arr_location = mysqli_fetch_row($reslocation);
+                    
+
+                    echo '<br> Country : '. $arr_location[4];
+                    echo '<br> Address : '. $arr_location[2];
+                    echo '<br> City : '. $arr_location[3].'<br><br>';
+                    echo '<small>If you would like to change location please go to my profile </small><br><br>';
+                    
+                ?>
+                <form action='index.php' method="post" class="center-statistics">
+                 <button type="submit" class="center-statistics button-pay" name="checkout-finalpay" style="width:100px; height:100px;">
+                Proceed to checkout
+            </button>
+                </form>
+            <?php echo '</p>'; ?>
+        </div>
+
+
     	<div class="demo" style="margin-top:-10rem;">
 		<form class="payment-card">
 			<div class="bank-card">
@@ -378,17 +414,23 @@
     </script>
     </div>
             
-
-
     <script>
         $(".card-click").click(function(){
             $(".demo").css("visibility","visible");
+            $(".cash-ondelivery").css("visibility","hidden");
             $(".paypal-pay").css("visibility","hidden");
         });
 
         $(".paypal-click").click(function(){
             $(".demo").css("visibility","hidden");
+            $(".cash-ondelivery").css("visibility","hidden");
             $(".paypal-pay").css("visibility","visible");
+        });
+
+        $(".ondelivery-click").click(function(){
+            $(".demo").css("visibility","hidden");
+            $(".paypal-pay").css("visibility","hidden");
+            $(".cash-ondelivery").css("visibility","visible");
         });
         
     </script>

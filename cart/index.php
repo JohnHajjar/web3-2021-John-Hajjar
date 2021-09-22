@@ -118,6 +118,17 @@
     ?>
 
 
+        <?php
+        if (isset($_POST['checkout-finalpay'])){
+                echo '<script> alert("HELOOOOOOOOOOOOOOOOOOOOOO"); </script>';
+                echo '<h1>SKDJFKLSDJFKLSDJFKLSDFJSDKLJSDFKL </h1>';
+                //TO DO HERE INSERT TO SALES
+            }
+
+        ?>
+
+
+
     <script>
 
 
