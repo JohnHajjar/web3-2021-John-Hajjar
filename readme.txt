@@ -4,13 +4,15 @@ x Things I NEED to do :
 0 --> Make forgot password for login 
         // waiting for DR. answer 
 
-1--> MAKE THE CHECKOUT WORK : //WORKING ON NOW 
+1--> MAKE THE CHECKOUT WORK : //DONE
         ADD TO SALES TABLES
         REMOVE FROM CART TABLE
-        UPDATE STOCK (-1) FROM THE PRODUCT TABLE
+
+
+1.5 --> ADD / REMOVE TO CART UPDATE STOCK VALUE FROM THE PRODUCT TABLE
 
 2 --> ADD FROM SALES TABLE IN DB TO STATISTICS SECTION 
-        //WAITING TO FINISH 1
+        //WORKING ON NOW 
 
 
 3 --> Make sign out and log in warning errors better. 

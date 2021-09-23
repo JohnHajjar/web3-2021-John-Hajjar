@@ -120,9 +120,32 @@
 
         <?php
         if (isset($_POST['checkout-finalpay'])){
-                echo '<script> alert("HELOOOOOOOOOOOOOOOOOOOOOO"); </script>';
-                echo '<h1>SKDJFKLSDJFKLSDJFKLSDFJSDKLJSDFKL </h1>';
-                //TO DO HERE INSERT TO SALES
+               
+                //TO DO HERE INSERT TO SALES}
+                    for ($i=0; $i<sizeof($arrIDprods); $i++){
+                            for ($j=0; $j<$quantity[$i]; $j++){
+                                $prodlist.= $arrIDprods[$i].'--';
+                            }
+                    }
+
+                    // echo '<script> alert("'.$prodlist.'asdasdasdasdas'.$totalcheckout.'"); </script>';
+                    $sqlsales = 'INSERT INTO sales (IDuser, Products, SaleValue) 
+                                    VALUE ("'.$_SESSION['ID'].'","'.$prodlist.'","'.$totalcheckout.'")';
+                    $ressales = mysqli_query($conn,$sqlsales);
+                    if ($ressales){
+                        $sqlremovefromcart = 'DELETE FROM cart WHERE IDuser="'.$_SESSION['ID'].'" ';
+                        $resremovefromcart = mysqli_query($conn,$sqlremovefromcart);
+                        if($resremovefromcart){
+                            echo '<script> alert("Order successfully created !"); </script>';
+                            //header("Refresh:2");
+                        } else {
+                            echo '<script> alert("There was an error code : 02"); </script>';
+                        }
+                    } else {
+                        echo '<script> alert("There was an error code : 01"); </script>';
+
+
+                    }
             }
 
         ?>

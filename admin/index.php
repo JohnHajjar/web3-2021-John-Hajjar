@@ -71,10 +71,20 @@
                 <!-- NUMBER OF TOTAL SALES + TOTAL REVENU -->
                 <div class="center-statistics">
                     <h2 align=center>
-                        Total sales : <!-- echo count(*) table sales -->
+                        <?php 
+                            $sqlsales = 'SELECT * FROM sales';
+                            $ressales = mysqli_query($conn,$sqlsales);
+                            $linecounter = 0;
+                            $totalrevenue = 0;
+                            while ($arr10 = mysqli_fetch_assoc($ressales)){
+                                $linecounter++;
+                                $totalrevenue += $arr10['SaleValue'];
+                           }
+                        ?>
+                        Total sales : <?php echo $linecounter; ?>
                     </h2>
                     <h2 align=center>
-                        Total revenue : $ <!-- Total revenue in sales --> 
+                        Total revenue : $ <?php echo $totalrevenue; ?>
                     </h2>
                 </div>
             
@@ -469,7 +479,10 @@ function drawBasic() {
     }
     </script>
     
-    
+    <?php 
+    //SELECT FROM ALL 
+
+    ?>
     
     <script type="text/javascript">
       google.charts.load('current', {'packages':['corechart']});
