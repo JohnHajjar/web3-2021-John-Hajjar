@@ -446,6 +446,33 @@
         });
     </script>
     
+<?php 
+    //2021-09-25
+    //2021-09-23
+     
+    //echo date('Y-m-d', strtotime('-26 days'));
+//  14 13 
+//  13 12
+//  12 11
+//  11 10
+
+        $arraysalescount = array();
+        $countersales = 14;
+
+        for ($i=0; $i<14; $i++){
+            $arraysalescount[$i] = date('Y-m-d', strtotime('-'.$countersales.' days'));
+            $countersales-=1;
+        }
+    // for ($k=0; $k<sizeof($arraysalescount); $k++) {
+    //     $date11 = $arraysalescount[$k];
+    //     $date22 = $arraysalescount[$k+1];
+    //     $sql2weeksales = 'SELECT count(*) FROM sales WHERE Timeadded BETWEEN "'.$date11.'" AND "'.$date22.'"';
+
+    // }
+    
+
+    
+?>
 
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script>
@@ -459,8 +486,20 @@ function drawBasic() {
       data.addColumn('number', 'Sales');
 
       data.addRows([
-        [1, 0], [2, 10], [3, 23], [4, 17], [5, 18], [6, 9], [7, 11], [8,5], [9,11], [10,18], [11,8],
-        [12,5], [13,2], [14,5]
+          <?php 
+              for ($k=0; $k<sizeof($arraysalescount); $k++) {    
+                $date11 = $arraysalescount[$k];
+                $date22 = $arraysalescount[$k+1];
+                $sql2weeksales = 'SELECT * FROM sales WHERE Timeadded BETWEEN "'.$date11.'" AND "'.$date22.'" ';
+                 $ressales = mysqli_query($conn,$sql2weeksales);
+                 $salesperday = mysqli_num_rows($ressales);
+                $day = $k+1;    
+                echo '['.$day.', '.$salesperday.'],';
+
+            }
+          ?>
+        // [1, 0], [2, 10], [3, 23], [4, 17], [5, 18], [6, 9], [7, 11], [8,5], [9,11], [10,18], [11,8],
+        // [12,5], [13,2], [14,5]
      ]);
 
       var options = {
@@ -480,7 +519,15 @@ function drawBasic() {
     </script>
     
     <?php 
-    //SELECT FROM ALL 
+
+    //SELECT COUNT DISTINCT GROUP BY 
+
+
+    // SELECT FROM ALL 
+        // SELECT * FROM sales 
+         // $arr.explode(--)
+        
+        //SELECT FROM productinfo WHERE  HAVING 
 
     ?>
     
