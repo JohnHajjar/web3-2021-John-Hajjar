@@ -520,15 +520,33 @@ function drawBasic() {
     
     <?php 
 
-    //SELECT COUNT DISTINCT GROUP BY 
+            $mensales = 0;
+            $womensales = 0;
+            $unisexsales = 0;
+            $sql1= 'SELECT Products FROM sales';
+            $res1 = mysqli_query($conn,$sql1);
+            while ($arr = mysqli_fetch_assoc($res1)){
 
+            $products_arr = explode('--', $arr['Products']);
+          
+                for ($i=0; $i<sizeof($products_arr); $i++){
+                    $sql2 = 'SELECT Gender FROM productinfo WHERE ID="'.$products_arr[$i].'"';
+                    $res2 = mysqli_query($conn,$sql2);
+                    $gendercase = mysqli_fetch_assoc($res2);
+                
+                    switch($gendercase['Gender']){
+                        case 'MEN':
+                            $mensales+=1; break;
+                        case 'WOMEN':
+                            $womensales+=1; break;
+                        case 'UNISEX': 
+                            $unisexsales+=1; break;
+                    }
+                }
 
-    // SELECT FROM ALL 
-        // SELECT * FROM sales 
-         // $arr.explode(--)
-        
-        //SELECT FROM productinfo WHERE  HAVING 
+            }
 
+    
     ?>
     
     <script type="text/javascript">
@@ -539,9 +557,9 @@ function drawBasic() {
 
         var data = google.visualization.arrayToDataTable([
           ['Task', 'Hours per Day'],
-          ['Men',     11],
-          ['Women',      7],
-          ['Unisex',  3]
+          ['Men', <?php echo $mensales; ?>],
+          ['Women', <?php echo $womensales; ?>],
+          ['Unisex', <?php echo $unisexsales; ?>]
         ]);
 
         var options = {
