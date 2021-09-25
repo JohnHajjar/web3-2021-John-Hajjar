@@ -4,14 +4,6 @@ x Things I NEED to do :
 0 --> Make forgot password for login 
         // waiting for DR. answer 
 
-1 --> UPDATE STOCK WHEN ADD / REMOVE TO CART
-
-2 --> ADD FROM SALES TABLE IN DB TO STATISTICS SECTION 
-        //WORKING ON NOW 
-        //FINISHED FIRST CHART WORKING ON THE SECOND
-        // 50% DONE
-
-
 3 --> Make sign out and log in warning errors better. 
         //HOLD
 

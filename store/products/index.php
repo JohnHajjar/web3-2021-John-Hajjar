@@ -161,6 +161,10 @@
         $resaddtocart = mysqli_query($conn,$sqladdtocart);
             if($resaddtocart) {
                echo '<p align=center> Successful : The item was added to your cart. </p>';
+             //UPDATE STOCK
+                $newstock = $instock-$_POST['quantity'];
+                $sqlupdatestock = 'UPDATE productdetails SET InStock="'.$newstock.'" WHERE IDP="'.$_POST['prodid'].'"';
+                $resupdatestock = mysqli_query($conn,$sqlupdatestock);
             }
             else { echo '<p align=center> Error : Please try again later. </p>';} 
             }
