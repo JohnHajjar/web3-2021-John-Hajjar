@@ -428,11 +428,18 @@ background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAA
   padding:30px;  
   background-color: rgba(0, 0, 0, 0.61);
  }
+
  @media screen and (max-width:800px){
    .tablesignup {
      margin-top:30%;
-   }
+    }
  }
+
+ @media screen and (max-width:390px){
+  .tablesignup {
+    margin-left:-20%;
+   }
+}
 
  .tablesignup tr {
    text-align: center;
@@ -948,6 +955,14 @@ hr {
   padding:10px;
 
 }
+
+
+@media screen and (max-width:590px){
+  .cover-imgs h1 {
+    visibility: hidden;
+    }
+  }
+  
 
 @media screen and (min-width:800px){
 .cover-imgs h1 {

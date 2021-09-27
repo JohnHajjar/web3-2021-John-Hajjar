@@ -14,12 +14,13 @@
     <body style="background-color:black">
         <?php include '../../db.php'; ?>
         <?php include '../../upbar.php'; ?>   
+        <br><br><br><br><br><br>
         <div class="cover-imgs">
             <img src="https://www.padani.com/pub/media/wysiwyg/blog/Untitled-1_0000.jpg">
           <h1 align=center>Best jewelry <br> for everyday use </h1>
         </div>
 
-    <br><br><br><br><br><br>
+    <br><br><br><br>
 
         <?php $dirgender= basename(__DIR__) ?>
         <?php include '../storeitems.php'; ?>

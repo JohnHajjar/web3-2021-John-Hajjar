@@ -116,22 +116,20 @@
                 </div> 
             </section>
 
-            <br><br><br><br><br><br><br><br><br><br><br><br>
-            <section class="section4" id="bestsellers">
+            <br><br><br><br><br>
+            <!-- <section class="section4" id="bestsellers">
                 <hr>
                 <h1 style="color:white; letter-spacing:5px; font-family: Neoneon,sans-serif; color:white;" align=center>
                 BEST SELLERS </h1>
                 <hr><br>
-                <!-- ADD A NEW TABLE FOR SALES AND GROUP BY ETC OR ADD A NWE COLUMN WITH TEH
-                AMOUT OF SALES
-                AND FOR LAYOUT DO THE SAME THING AS THE ONE BEFORE LITERALLY COPY PASTE IT ! -->
-            
-            </section>
+
+
+            </section> -->
 
 
 
-            <br><br><br><br><br><br><br><br><br><br><br><br>
-            <br><br><br><br><br><br><br><br><br><br><br><br>
+            <!-- <br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br> -->
             
             <div style="background-color:black;">
                 <hr><?php include '../footer.php'; ?>

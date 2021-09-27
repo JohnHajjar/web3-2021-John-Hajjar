@@ -13,13 +13,14 @@
     </head>
     <body style="background-color:black">
         <?php include '../../db.php'; ?>
-        <?php include '../../upbar.php'; ?>   
+        <?php include '../../upbar.php'; ?>
+        <br><br><br><br><br><br>
         <div class="cover-imgs">
             <img src="https://cfs3.monicavinader.com/images/2020-plp-banner-wide-medium/14078840-doina-plp.jpeg">
           <h1 align=center>Best jewelry <br> for everyday use </h1>
         </div>
 
-    <br><br><br><br><br><br>
+    <br><br><br><br>
 
         <?php $dirgender= basename(__DIR__) ?>
         <?php include '../storeitems.php'; ?>

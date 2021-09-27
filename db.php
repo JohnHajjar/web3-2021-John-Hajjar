@@ -22,7 +22,7 @@ if (isset($_POST['signupbtn'])){
         $errors['Pnumber'] = 'Phone number is required';
     }
     if (empty($_POST['email'])){
-        $errors['email']= 'A password is required';
+        $errors['email']= 'An e-mail is required';
     }
     if (empty($_POST['pass'])){
         $errors['pass']= 'A password is required';
@@ -119,8 +119,15 @@ if (isset($_POST['loginbtn'])) {
              }
 
         } else {
-            $errors['login_fail'] = 'Account not available in our Database. <br> Please Sign Up !';
-            echo $errors['login_fail'];
+            
+            $errors['login_fail'] = 'Account not available in our Database. Please Sign Up !';
+            echo '<script>alert("'.$errors['login_fail'].'");</script>'; 
+            echo '<script>window.location.href="/web3x/signup.php"</script>';
+            //header("Location: /web3x/signup.php");
+             //Redirects the user with JavaScript
+    
+            //echo '<script>alert("'.$errors['login_fail'].'")</script>';
+            
         }
     }
 
@@ -135,14 +142,16 @@ if (isset($_POST['loginbtn'])) {
 //DISPLAY OF ERRORS
 
 ?>
+
 <?php if (count($errors) > 0): ?>
     <div>
       <?php foreach ($errors as $error): ?>
-      <li>
-        <?php echo $error; ?>
+      <!-- <li> -->
+        <?php //echo $error; ?>
         <?php echo '<script>alert("'.$error.'");</script>'; ?>
-      </li>
+        <!-- </li> -->
       <?php endforeach;?>
     </div>   
-    <?php echo '<script> window.location = "login.php" </script>'; ?>
+    <?php echo '<script> window.location = "signup.php" </script>'; ?>
   <?php endif;?>
+    
