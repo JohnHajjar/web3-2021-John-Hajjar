@@ -463,15 +463,7 @@
             $arraysalescount[$i] = date('Y-m-d', strtotime('-'.$countersales.' days'));
             $countersales-=1;
         }
-    // for ($k=0; $k<sizeof($arraysalescount); $k++) {
-    //     $date11 = $arraysalescount[$k];
-    //     $date22 = $arraysalescount[$k+1];
-    //     $sql2weeksales = 'SELECT count(*) FROM sales WHERE Timeadded BETWEEN "'.$date11.'" AND "'.$date22.'"';
-
-    // }
-    
-
-    
+   
 ?>
 
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
@@ -498,8 +490,6 @@ function drawBasic() {
 
             }
           ?>
-        // [1, 0], [2, 10], [3, 23], [4, 17], [5, 18], [6, 9], [7, 11], [8,5], [9,11], [10,18], [11,8],
-        // [12,5], [13,2], [14,5]
      ]);
 
       var options = {
@@ -574,6 +564,34 @@ function drawBasic() {
         chart.draw(data, options);
       }
     </script>
+
+    <br>
+    <hr> <h2 align=center  class="hover-effect"> Developer information </h2><hr>
+    <br>
+    <script type="text/javascript" src="developer.json"></script>
+    <!-- <script type="text/javascript" src="javascrip.js"></script> -->
+    
+    <?php
+         $json = file_get_contents('developer.json');
+         $json_data = json_decode($json,true);
+           
+        //  print_r($json_data);
+    echo '<div style="display:grid; justify-content: center; align-items: center; text-align:center;">';
+         echo 'Full Name : '.$json_data['firstName'].' '.$json_data['lastName'];
+         echo '<br>Email : '.$json_data['email'];
+         echo '<br>Age : '.$json_data['age'];
+         echo '<br><br>Adress: <br>';
+         echo 'Street Adress: '.$json_data['address']['streetAddress'];
+         echo '<br>City : '.$json_data['address']['city'];
+         echo '<br>Postal Code : '.$json_data['address']['postalCode'];
+         echo '<br><br>Phone numbers : <br>';
+         echo '1- '.$json_data['phoneNumbers'][0]['type'].' -- ';
+         echo $json_data['phoneNumbers'][0]['number'];
+         echo '<br> 2- '.$json_data['phoneNumbers'][1]['type'].' -- ';
+         echo $json_data['phoneNumbers'][1]['number'];
+    echo '</div><br><br><br>';         
+           
+         ?>
 
     </body>
 </html>

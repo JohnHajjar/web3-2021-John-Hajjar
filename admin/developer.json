@@ -1,0 +1,15 @@
+{
+    "firstName": "John",
+    "lastName": "Hajjar",
+    "email": "john.hajjar@isae.edu.lb",
+    "age": 20,
+    "address": {
+        "streetAddress": "1012",
+        "city": "Lebanon",
+        "postalCode": "000000"
+    },
+    "phoneNumbers": [
+        { "type": "personal", "number": "+961 70 000 000" },
+        { "type": "work", "number": "(1) 1234 - 567 - 890" }
+    ]
+}

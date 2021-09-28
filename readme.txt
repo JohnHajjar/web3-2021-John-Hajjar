@@ -1,8 +1,6 @@
 
 x Things I NEED to do : 
 
-1 --> STORE CAROUSAL ADD PICTURES
-
 2 --> JSON
 
 x Things MAYBE DO if free time left :
