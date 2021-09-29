@@ -128,20 +128,10 @@
 <br class="br-bigscreens"><br class="br-bigscreens"><br class="br-bigscreens">
 <br class="br-bigscreens"><br class="br-bigscreens"><br class="br-bigscreens">
 
-<!-- MAYBE IF STILL MORE TIME ADD CUSTOMER REVIEWS HERE ! -->
-<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
-
 
 <div style="background-color:black; width:100%;">
 <?php include '../web3x/footer.php'; ?>
 </div>
-
-
-<!-- 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<div class="img3">
-    maybe customer reviews later
-</div> -->
 
 
 </body>

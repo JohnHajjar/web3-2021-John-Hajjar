@@ -126,11 +126,6 @@
 
             </section> -->
 
-
-
-            <!-- <br><br><br><br><br><br><br><br><br><br><br><br>
-            <br><br><br><br><br><br><br><br><br><br><br><br> -->
-            
             <div style="background-color:black;">
                 <hr><?php include '../footer.php'; ?>
             </div>

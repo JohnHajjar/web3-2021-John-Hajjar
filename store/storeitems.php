@@ -39,33 +39,8 @@
                 $counter1++;
             }
 
-     // $sqlquerynecklace =
-            // "SELECT ID, ProductName, ProductType, Imagesrc, Keywords, Gender, Price FROM productinfo WHERE Gender='".$dirgender."' AND ProductType='NECKLACES' ";
-            // $resnecklacemen = mysqli_query($conn,$sqlnecklacemen);
-            // $counter = 0;
-            //     while ($arr = mysqli_fetch_assoc($resnecklacemen)){
-            //       echo "<a href=\"#popup".$arr['ID']."\">";
-            //         echo '<img src="'.$arr['Imagesrc'].'" >';
-            //       echo '</a>';
-            //       echo "<div id=\"popup".$arr['ID']."\" class=\"overlay\">";
-            //         echo '<div class="popup">';
-            //           echo '<h3> '.$arr['ProductName'].' </h3>';
-            //           echo '<a class="close" href="#men"> &times; </a>';
-            //           echo '<div class="content">';
-            //             echo 'Product type : '. strtolower($arr['ProductType']) . ' for ' . strtolower($arr['Gender']);
-            //             echo '<img src="'.$arr['Imagesrc'].'" >';
-            //             echo '<br><br>';
-            //             echo 'Price : '. $arr['Price'] . ' $ <br>';
-            //             echo '<button onclick="addtocart("'.$SESSION['ID'].'", "'.$arr['ID'].'")"> Clickme </button>';
-            //             echo '<hr>';
-            //             echo '<p>Keywords related to this product : ' . $arr['Keywords'] . '</p>';
-            //           echo "</div>";
-            //         echo "</div>";
-            //       echo "</div>";
-            //       $counter++;
-            //     }
 
-        // ?>
+        ?>
 
 
 
@@ -115,8 +90,6 @@
                   $counter3++;
               }
               ?>
-      
-    <!-- <img src="../../imgs/197313437_921483241967859_3678868605241913414_n.jpg"> -->
       
     </div>
   </div>

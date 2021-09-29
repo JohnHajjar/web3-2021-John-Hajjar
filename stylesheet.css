@@ -551,12 +551,6 @@ hr {
   margin-left: 5%;
 }
 
-/*@media screen and (max-width: 600px) {
-  .childs33 {
-    color:black;
-  }
-}*/
-
 .childs11:hover {
   animation: selectcategory 1.4s ease-in forwards;
 }
@@ -684,18 +678,12 @@ hr {
   .categmen, .categwomen, .categboth{
     border: 2px solid whitesmoke;
     background-color: whitesmoke;
-    /* border-bottom-left-radius: 0.5rem;
-    border-bottom-right-radius: 0.5rem; */
     border-radius: 0.5rem;
   }
 
 }
  
 @media screen and (max-width:400px) {
- /*  #section2, .categ-men, .categwomen, .categboth, .smscreen-men, .smscreen-women, .smscreen-both {
-    font-size: 30%;
-    font-weight: lighter;
-  }*/
   .categmen, .categwomen, .categboth {
     min-width:100%;
   }
@@ -977,13 +965,6 @@ hr {
   }
   }
 
-  /* @media screen and (min-width:1050px){
-    .cover-imgs h1 {
-      margin-left:50%;
-      margin-top: -35%;
-    }
-    }
-     */
   
 
 
@@ -1255,7 +1236,6 @@ hr {
   margin-bottom: 0;
   padding: 1.25rem 1.5rem;
   border-bottom: 1px solid rgba(0, 0, 0, .05);
-  /* background-color: #fff; */
   background-color: black;
    border: 0 !important;
 }
@@ -1499,19 +1479,6 @@ hr {
 .edit-div .close:hover {
   color: rgba(212, 175, 55, 1);
 }
-/* .admin-popup .admin-content {
-  max-height: 30%;
-  overflow: auto;
-} */
-
-/* @media screen and (max-width: 700px){
-  .box{
-    width: 70%;
-  }
-  .popup{
-    width: 70%;
-  }
-} */
 
 .ahref-admin {
   color:blue;

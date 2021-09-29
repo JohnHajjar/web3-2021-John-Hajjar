@@ -15,13 +15,7 @@
    
 
 
-    <?php include 'db.php';
-                //TO ADD IF SIGNED IN OR NOT
-                // USER MUST NOT ENTER THE SHOP IF NOT SIGNED IN AKA A SESSION IN PLACE !!!!!
-    //if (!isset($_SESSION)) { header ('location : welcomepage.php'); }
-                        // if ( session_status() === PHP_SESSION_NONE || $_SESSION['logged'] == false )
-    //font-family: 'IBM Plex Mono',sans-serif;
-    ?>
+    <?php include 'db.php'; ?>
 
   <?php include 'upbar.php'; ?>
  <br><br>
@@ -83,7 +77,7 @@ $conn = new mysqli('localhost', 'root', '', 'webdb3');
 
 
 
-<!-- Categories : NECKLACE/ RINGS/ BRACELETS/ MEN / WOMEN / COUPLES
+<!-- Categories : NECKLACE/ RINGS/ BRACELETS/ MEN / WOMEN 
         With an explore more on hover showing more of this category (simple sql)-->
 <br><br><br><br><br><br><br><br><br>
 
@@ -366,48 +360,6 @@ $conn = new mysqli('localhost', 'root', '', 'webdb3');
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <?php include 'footer.php'; ?>
-<script>
-/*
-addtocart(iduser, idproduct) {
-  <?php //USE JQUERY FOR THIS FUNCTION 
- /* $sqlcheck = "SELECT * FROM cart 
-  WHERE IDuser='".$iduser."' AND IDproduct='".$idproduct."' ";
-  $rescheck = mysqli_query($conn,$sqlcheck);
-  if (mysqli_num_rows($rescheck) == 0 ) {
-    $sqladd = "INSERT INTO cart (IDuser,IDproduct) VALUES ('".$iduser."', '".$idproduct."')";
-    $resadd = mysqli_query($conn,$sqladd);
-    } else {
-      echo 'Product is already added to cart';
-    }
-    
-    */?>
-}*/
-
-
-/*
-
-$(document).ready(function(){
-  $(".texts").mouseenter(function(){
-    $('.expmore').animate({'opacity': 0}, 500, function () {
-      $(this).html('Explore more ');
-  }).animate({'opacity': 1}, 500);
-  
-   });
-
-   $(".texts").mouseleave(function(){
-  
-    $('.expmore').delay(4000).animate({'opacity': 0}, 500, function () {
-      $(this).html('>');
-  }).animate({'opacity': 1}, 500);
-
-
-
-
-   });
-
-});*/
-
-</script>
 
     </body>
     </html>

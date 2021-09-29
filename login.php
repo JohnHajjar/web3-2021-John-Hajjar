@@ -62,6 +62,7 @@ function forgotpassword($username)
         // ASK FOR : 1- PHONE NUMBER OR 2- EMAIL
         // PREPARE A VERIFICATION TOKEN
         // MAKE THE CHANGES IF EVERYTHING IS TRUE
+        //SKIP
     }
 
 </script>
