@@ -166,9 +166,6 @@ a {
   .br-bigscreens {
     display:block;
   }
-  /* #shipping-return-categ {
-    margin-top:-20%;
-  } */
 
   .sr-image { 
     margin-left:2%;
@@ -753,7 +750,7 @@ hr {
 
 .img-items {
   width:120px;
-  height:auto;
+  height:150px; /*height:auto;*/
   margin: 5px;
   border: 5px solid rgba(248, 225, 225, 0.15);
 }
