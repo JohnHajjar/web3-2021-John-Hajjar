@@ -21,7 +21,7 @@
         <?php include '../../upbar.php'; ?>   
 
         <?php 
-        echo $_POST["prodid"];
+        //echo $_POST["prodid"];
         $productID = $_POST["prodid"];
         //get all product info 
         $sqlgetinfo = 'SELECT * FROM productinfo WHERE ID='.$productID;

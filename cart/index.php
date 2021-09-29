@@ -89,8 +89,7 @@
             echo '<p align=center>Proceed to checkout <br> <span class="cart-vals"> '.$counterc1.' </span> items with a total of <span class="cart-vals"> $'
             .$totalcheckout.' </span><br><br> </p>' ; 
             echo '<button onclick="document.getElementById(\'cartinfo\').style.display = document.getElementById(\'cartinfo\').style.display == \'none\' ? \'block\' : \'none\'; return false;" name="checkout" class="checkout remove-btn" value="Checkout"> Checkout </button>';
-            // echo '<iframe id="frame" src="cartinfo.php" style="width: 100%; height:50%; display:none;" allowfullscreen="true" frameborder="0"></iframe>'; 
-           echo '<br><br><br>';
+             echo '<br><br><br>';
            echo '<div id="cartinfo" style="display:none; width=50% overflow:hidden;">';
            include 'cartinfo.php';
            echo '</div>';
@@ -113,7 +112,11 @@
             $quantity=$_POST['quantity'];
                 $sqldel = "DELETE FROM cart WHERE IDproduct='$idp' AND IDuser='".$_SESSION['ID']."'";
                         $resdel = mysqli_query($conn, $sqldel); 
-                   }
+                    if ($resdel) {
+                        header('Location: /web3/cart');
+                    }
+                    }
+            
     }
     ?>
 
@@ -178,9 +181,6 @@
         }
     });
 
-        $(".checkout").click(function(){
-            var 
-        });
 
     </script>
 

@@ -14,7 +14,7 @@
     <body style="background-color:black">
 
 
-<!-- Necklaces -- RINGS -- Bracelets -->
+<!-- Necklaces -- RINGS -- Bracelets -- EARRINGS-->
 <section id="items-all">
   <hr>
     <h1 class="storeitem-h1" align=center>
